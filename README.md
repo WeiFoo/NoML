@@ -27,9 +27,7 @@ R: https://machinelearningmastery.com/overfitting-and-underfitting-with-machine-
 
 ## GitBook
 
-This project is hosted at gitbook, you can read and contribute here!==&gt;[https://git.gitbook.com/weifoo/noml.git](https://git.gitbook.com/weifoo/noml.git)
-
-
+This project is hosted at gitbook, you can read it here!==&gt;[https://weifoo.gitbooks.io/noml/content](https://weifoo.gitbooks.io/noml/content/)
 
 
 
