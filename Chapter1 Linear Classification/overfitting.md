@@ -41,7 +41,7 @@ At each training stage, individual nodes are either "dropped out" of the net wit
 The technique seems to reduce node interactions, leading them to learn more robust features that better generalize to new data.
 
 R:[1] [https://en.wikipedia.org/wiki/Convolutional_neural_network#Dropout](https://en.wikipedia.org/wiki/Convolutional_neural_network#Dropout)
-  [2] []()
+  [2] [http://cs231n.github.io/neural-networks-2/](http://cs231n.github.io/neural-networks-2/)
 
 
 
