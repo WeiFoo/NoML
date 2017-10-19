@@ -19,6 +19,6 @@
   * C4.5/CART
   * RandomForests
   * XGBoost
-* Clustering
+* [Clustering](clustering.md)
 * [Ensemble](ensemble.md)
 
