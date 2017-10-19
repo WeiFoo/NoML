@@ -16,12 +16,17 @@ R: [http://www.chioka.in/differences-between-l1-and-l2-as-loss-function-and-regu
  
  
 ## Why L1 regularization can generate sparsity?
+We can use this graph is explain. We have two parameters,theta1 and theta2.
+The error value is the same for each blue circle. Regularization terms show in yellow. The first point the blue lines meet yellow line is the optimal solution.
+You can see that, for L1, the meeting point mostly happens at the corner while L2 doesn't have corner. ![](/assets/Screen Shot 2017-10-19 at 5.57.54 PM.png)
+
 
 ![](https://pic4.zhimg.com/v2-648584bcfaa1020d62861208775462df_b.png)
 
 ## Why L1 is not stable?
 
 ![](https://pic1.zhimg.com/v2-e8734136ff4da41b748f16e514971aa0_b.png)
+
 
 ## What's the L1 and L2 loss?
 
