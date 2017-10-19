@@ -12,6 +12,6 @@ L2 has unique solutions and L1 have multiple solutions. see the following pictur
 
 ![](http://www.chioka.in/wp-content/uploads/2013/12/L1-norm-and-L2-norm-distance.png)
 
-R: [](http://www.chioka.in/differences-between-l1-and-l2-as-loss-function-and-regularization/)
+R: [http://www.chioka.in/differences-between-l1-and-l2-as-loss-function-and-regularization/](http://www.chioka.in/differences-between-l1-and-l2-as-loss-function-and-regularization/)
  
  
