@@ -155,6 +155,38 @@ $$
 
 This is the same as logistic regression.
 
+[1] [Chinese reference](https://plushunter.github.io/2017/01/12/机器学习算法系列（3）：逻辑斯谛回归/)
+
+## How to apply logistic regression on multi-classification problem?
+* Build binary classifier for each category, one-verus- all
+* Softmax
+
+More:
+
+Properties of Softmax:
+
+* The calculated probabilities will be in the range of 0 to 1.
+* The sum of all the probabilities is equals to 1.
+
+When using Softmax, we have the following probability model
+$$
+P(y=i|x,\theta)=\frac{^{e^{\theta^T_ix}}}{\sum_j^K e^{\theta_j^Tx}}
+$$
+
+We use the following rule to classify our prediction:
+
+$$
+y^*=argmax_iP(y=i|x,\theta )
+$$
+
+The loss function is
+
+$$
+J(\theta)=-\frac{1}{N}\sum_i^N\sum_j^KP(y_i=j)log\frac{e^{\theta_i^Tx}}{\sum e^{\theta_k^Tx}}
+$$
+
+
+
 
 
 
