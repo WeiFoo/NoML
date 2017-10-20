@@ -136,14 +136,27 @@ $$
 H_{mn} = \frac {\partial^2 J(w)} {\partial w_m \partial w_n} =h_w(x^{(i)})(1-h_w(x^{(i)}))x^{(i)}_mx^{(i)}_n  
  $$
  
-
- 
  #### SGD
  
 We use the gradient to find the direction to reduce the loss, $$ w_j^{k+1} = w_j^k + \alpha g_j$$. $$k$$ is the iteration number. After each update, we can compare $$J(w^{k+1}) - J(w^k) $$ or $$||w^{k+1}-w^{k}||$$ with some threshold $$\epsilon$$ to determine when to stop.
  
  #### Newtown
  
+The basic idea of Newtown method is to do second order Taylor expansion of f(x) around current local optima value, to get the estimates of next optimal value. 
+Suppose $$w^{k}$$is the current minimal value,$$
+ \varphi (w) = J(w^k) + J’(w^k)(w-w^k)+\frac{1}{2}J’’(w^k)(w-w^k)^2 
+$$
+ 
+Let $$\varphi'(w) = 0$$, then we get $$w = w^k-\frac{J'(w^k)}{J''(w^k)}$$, then we have the update rule:
+$$
+   w^{k+1} = w^k - \frac{J’(w^k)}{J’’(w^k)} = w^k - H_k^{-1}\cdot g_k
+$$
+ 
+In this method, we need a threshold $$\epsilon$$, when $$||g_k|| < \epsilon$$, stop updates. In this method, we also require that the 2nd order derivative of objective function J(w) exists. 
+
+
+## BFGS,
+
 [1][Hessian Matrix of Logistic function](http://personal.psu.edu/jol2/course/stat597e/notes2/logit.pdf) 
 
 ## Can logistic regression work on data that may not be separable by a linear boundary? 
