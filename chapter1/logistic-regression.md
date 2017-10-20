@@ -136,8 +136,24 @@ $$
 p(y|x)=\frac{P(x|y)P(y)}{\sum P(x|y)P(y)}
 $$
 
-Generally, we assume that $$P(x|y)$$ is gaussian distribution, and $$P(y)$$ is polynomial distribution, then the parameters could be estimated by MLE
+Generally, we assume that $$P(x|y)$$ is gaussian distribution, and $$P(y)$$ is polynomial distribution, then the parameters could be estimated by MLE. If we only consider a binary classification problem, then the log of odd's ratio can be written by:
 
+$$
+log\frac{P(y=1|x)}{P(y=0|x)}=log\frac{P(x|y=1)}{P(x|y=0)}+log\frac{P(y=1)}{P(y=0)}=-\frac{(x-\mu_1)^2}{2\sigma_1^2}+\frac{(x-\mu_0)^2}{2\sigma_0^2}+\theta_0
+$$
+
+if we assume $$\sigma_1=\sigma_0$$, then denominator would be cancelled out, we will get:
+
+$$
+log\frac{P(y=1|x)}{P(y=0|x)}=\theta^Tx
+$$
+Furthermore, we will get:
+
+$$
+P(y=1|x)=\frac{e^{\theta^Tx}}{1+e^{e^Tx}}=\frac{1}{1+e^{-\theta^Tx}}
+$$
+
+This is the same as logistic regression.
 
 
 
