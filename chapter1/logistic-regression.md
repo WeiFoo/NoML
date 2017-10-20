@@ -76,14 +76,14 @@ Suppose the samples are generated from bernoulli process and the results(0/1) wi
 For the i-th sample, the probability can be written as:
 
 $$
-P(y^{(i)}=1|x^{(i)};\theta )=h_\theta{(x^{(i)})}
-
+P(y^{(i)}=1|x^{(i)};\theta )=h_\theta{(x^{(i)})} 
+$$ $$
 P(y^{(i)}=0  |x^{(i)};\theta )=1- h_\theta{(x^{(i)})}
 $$
 
 Then combine them together, the prob of correct prediction on i-th sample is:
 $$
-P(y^{(i)}|x^{(i)};\theta)=(h_\theta(x^{(i)})^{y(i)})·（1-h_\theta(x^{(i)}))^{1-y(i)}
+P(y^{(i)}|x^{(i)};\theta)=(h_\theta(x^{(i)})^{y(i)})(1-h_\theta(x^{(i)}))^{1-y(i)}
 $$
 
 Since we assume that all the samples are generated IID, then for all N samples, the probability distribution can be expressed as:
