@@ -155,7 +155,39 @@ $$
 In this method, we need a threshold $$\epsilon$$, when $$||g_k|| < \epsilon$$, stop updates. In this method, we also require that the 2nd order derivative of objective function J(w) exists. 
 
 
-## BFGS,
+#### BFGS
+
+Issues with Newtown:
+* $$H^{-1}_k$$ is expensive, computing intensive. 
+* $$H^{-1}_k$$ might be not semi-definite 
+Therefore, we need to use other quasi-newton methods, which is to estimate $$H^{-1}_k$$ matrix.
+
+##### Secant condition 
+
+Taylor expansion around $$x_{k+1}$$ is,
+
+$$ 
+ f(x) \approx f(x) + f(x_{k+1})'(x-x_{k+1}) + \frac{1}{2}f(x_{k+1})''(x-x_{k+1})^2
+$$
+
+Take a derivative, 
+
+$$
+ f'(x) = f'(x_{k+1}) +H_{k+1}(x-x_{k+1})
+$$
+
+let $$x= x_{k}$$, then we have  
+
+$$
+ g_{k+1} - g_k \approx H_{k+1}(x_{k+1}-x_k)
+$$
+
+Let $$s_k = x_k - x_{k+1}$$ and $$y_k = g_{k+1} - g_k$$, then we have the secant condition as:
+
+$$
+ y_k = H_{k+1}x_k
+$$
+
 
 [1][Hessian Matrix of Logistic function](http://personal.psu.edu/jol2/course/stat597e/notes2/logit.pdf) 
 
