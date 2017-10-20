@@ -67,13 +67,16 @@ $$
 
 
 ## How to update(estimate) logistic regression parameters?[THIS IS LONG]
+**Sort answer: ** MLE, SDG, L-BFGS, ADMM....???
+
+**Long answer:** 
 
 Suppose the samples are generated from bernoulli process and the results(0/1) will follow Bernoulli distribution. Suppose the prob of 1 is $$h_\theta(x)$$, then prob of 0 is 1-$$h_\theta(x)$$.
 
 For the i-th sample, the probability can be written as:
 
 $$
-P(y^{(i)}=1|x^{(i)};\theta )=h_\theta{(x^{(i)})}\\
+P(y^{(i)}=1|x^{(i)};\theta )=h_\theta{(x^{(i)})}
 
 P(y^{(i)}=0  |x^{(i)};\theta )=1- h_\theta{(x^{(i)})}
 $$
