@@ -126,6 +126,19 @@ $$
 Yes, kernel trick, project data to higher dimension feature space, which might have a hyperplane to separate the data. 
 
 
+## What's the relationship between logistic regression and gaussian naive bayes?
+
+Under some condition, they learn the same model.
+
+In gaussian naive bayes, Posterior is :
+
+$$
+p(y|x)=\frac{P(x|y)P(y)}{\sum P(x|y)P(y)}
+$$
+
+Generally, we assume that $$P(x|y)$$ is gaussian distribution, and $$P(y)$$ is polynomial distribution, then the parameters could be estimated by MLE
+
+
 
 
 

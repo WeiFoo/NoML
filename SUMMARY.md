@@ -10,6 +10,7 @@
   * [Optimization](chapter1/optimization.md)
   * [Performance Metrics](chapter1/performance-metrics.md)
   * [Overfitting](chapter1/overfitting.md)
+  * [Generative Model and Discriminative Models](chapter1/generative-model-and-discriminative-models.md)
 * [Deep Learning](deep-learning.md)
   * RNN/LSTM
   * CNN
