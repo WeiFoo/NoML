@@ -31,9 +31,7 @@ Y
 |
 X
 )
-.  That's what makes it a regression model.
-
-You can take that output and perform classification with it, but that doesn't make the model a classifier.
+.  That's what makes it a regression model You can take that output and perform classification with it, but that doesn't make the model a classifier.
 
 [1] [https://www.quora.com/Why-is-logistic-regression-called-regression-if-it-doesnt-model-continuous-outcomes](https://www.quora.com/Why-is-logistic-regression-called-regression-if-it-doesnt-model-continuous-outcomes)
 
