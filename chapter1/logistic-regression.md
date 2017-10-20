@@ -175,7 +175,7 @@ ln\frac{Pr(Y_i = 2)}{P(Y_i = K)} = \beta_2 X_i
 $$
 
 $$
-\dots \dots
+......
 $$
 $$
 ln\frac{Pr(Y_i = K-1)}{P(Y_i = K)} = \beta_{K-1} X_i
@@ -188,8 +188,9 @@ $$
 Pr(Y_i = 1) = Pr(Y_i = K) e^{\beta_1X_i}
 $$$$Pr(Y_i = 2) = Pr(Y_i = K) e^{\beta_2X_i}
 $$$$
-\dots \dots
-$$$$
+......
+$$
+$$
 Pr(Y_i = K-1) = Pr(Y_i = K) e^{\beta_{K-1}X_i}
 $$
 
