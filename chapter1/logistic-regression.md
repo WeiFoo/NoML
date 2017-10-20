@@ -106,20 +106,45 @@ You might feel familiar with this. Right! Maximizing the log likelihood is actua
 For now, we just ignore the summation term and consider very single parameter $$\theta_j$$, we take the derivative with respective to $$\theta_j$$
 
 $$
-\frac{\partial}{\partial\theta_j}l\left(\theta\right)=\left(y\frac{1}{h_{\theta}\left(x\right)}-\left(1-y\right)\frac{1}{1-h_{\theta}\left(x\right)}\right)\frac{\partial}{\partial\theta_j}h_{\theta}\left(x\right)
+\frac{\partial}{\partial\theta_j}l\left(\theta\right)=\left(y^{(i)}\frac{1}{h_{\theta}\left(x\right)}-\left(1-y^{(i)}\right)\frac{1}{1-h_{\theta}\left(x\right)}\right)\frac{\partial}{\partial\theta_j}h_{\theta}\left(x\right)
 $$
 $$
-=\left(\frac{y\left(1-h_{\theta}\left(x\right)\right)-\left(1-y\right)h_{\theta}\left(x\right)}{h_{\theta}\left(x\right)\left(1-h_{\theta}\left(x\right)\right)}\right)h_{\theta}\left(x\right)\left(1-h_{\theta}\left(x\right)\right)\frac{\partial}{\partial\theta_j}\theta^Tx
-$$
-
-$$
-=\left(y-h_{\theta}\left(x\right)\right)x_j
+=\left(\frac{y^{(i)}\left(1-h_{\theta}\left(x\right)\right)-\left(1-y^{(i)}\right)h_{\theta}\left(x\right)}{h_{\theta}\left(x\right)\left(1-h_{\theta}\left(x\right)\right)}\right)h_{\theta}\left(x\right)\left(1-h_{\theta}\left(x\right)\right)\frac{\partial}{\partial\theta_j}\theta^Tx
 $$
 
-Then, we can update the parameters by:
+$$
+=\left(y^{(i)}-h_{\theta}\left(x\right)\right)x_j
+$$
+
+Then, we can update the parameters by SGD:
 $$
 \theta_j:=\theta_j+a\left(y^{\left(i\right)}-h_{\theta}\left(x^{\left(i\right)}\right)\right)x_{j}^{\left(i\right)}
 $$
+ 
+## Solvers:
+
+Given the logistic loss function(-log(x)):
+$$
+min J(w) = min {-\frac{1}{m}[\sum_{i=1}^{m}y_ilog h_w (x_i) + (1-y_i)log(1-h_w(x_i))]} 
+$$
+We use $$g$$ and $$H$$ to denote 1st order gradient and Hessian matrix. For a given sample $$y_i$$, we have
+
+$$
+g_j = \frac{\partial J(w)} {\partial w_j} = \frac{y^{(i)}}{h_w(x^{(i)})}h_w(x^{(i)})(1-h_w(x^{(i)}))(-x_{j}^{(i)})+(1-y^{(i)})\frac {1}{1-h_w(x^{(i)})}h_w(x^{(i)})(1-h_w(x^{(i)}))x_j^{(i)}=(y^{(i)}-h_w(x^{(i)}))x^{(i)}    
+ $$
+$$
+H_{mn} = \frac {\partial^2 J(w)} {\partial w_m \partial w_n} =h_w(x^{(i)})(1-h_w(x^{(i)}))x^{(i)}_mx^{(i)}_n  
+ $$
+ 
+
+ 
+ #### SGD
+ 
+We use the gradient to find the direction to reduce the loss, $$ w_j^{k+1} = w_j^k + \alpha g_j$$. $$k$$ is the iteration number. After each update, we can compare $$J(w^{k+1}) - J(w^k) $$ or $$||w^{k+1}-w^{k}||$$ with some threshold $$\epsilon$$ to determine when to stop.
+ 
+ #### Newtown
+ 
+[1][Hessian Matrix of Logistic function](http://personal.psu.edu/jol2/course/stat597e/notes2/logit.pdf) 
 
 ## Can logistic regression work on data that may not be separable by a linear boundary? 
 
@@ -172,12 +197,9 @@ One fairly simple way to arrive at the multinomial logit model is to imagine, fo
  
  $$
 ln\frac{Pr(Y_i = 2)}{P(Y_i = K)} = \beta_2 X_i
-$$
-
-$$
+$$$$
 ......
-$$
-$$
+$$$$
 ln\frac{Pr(Y_i = K-1)}{P(Y_i = K)} = \beta_{K-1} X_i
 $$
 
@@ -189,8 +211,7 @@ Pr(Y_i = 1) = Pr(Y_i = K) e^{\beta_1X_i}
 $$$$Pr(Y_i = 2) = Pr(Y_i = K) e^{\beta_2X_i}
 $$$$
 ......
-$$
-$$
+$$$$
 Pr(Y_i = K-1) = Pr(Y_i = K) e^{\beta_{K-1}X_i}
 $$
 
@@ -212,7 +233,7 @@ $$
 The fact that we run multiple regressions reveals why the model relies on the assumption of independence of irrelevant alternatives described above.
 
 
-
+[1] [https://en.wikipedia.org/wiki/Multinomial_logistic_regression](https://en.wikipedia.org/wiki/Multinomial_logistic_regression)
 #### Sigmox  
 
 More:
