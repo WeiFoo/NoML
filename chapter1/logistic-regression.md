@@ -205,7 +205,7 @@ $$
 $$$$
 Pr(Y_i = 2) = \frac{e^{\beta_2Xi}}{1+ \sum_{k=1}^{K-1}e^{\beta_kX_i}}
 $$$$
-\dots \dots$$$$
+......$$$$
 Pr(Y_i = K-1) = \frac{e^{\beta_{K-1}Xi}}{1+ \sum_{k=1}^{K-1}e^{\beta_kX_i}}
 $$
 
