@@ -19,9 +19,9 @@ It's called a generalized linear model **not because** the estimated probability
 More generally, the Generalized Linear Model is of the form   
 $$g(\mu_i) = \beta_0 + \beta_1x+\beta_2x^2.....$$. where $$\mu$$ is the expected value of the response given the covariates.
 
-\[1\][https://en.wikipedia.org/wiki/Logit](https://en.wikipedia.org/wiki/Logit)  
-\[2\][https://en.wikipedia.org/wiki/Logistic\_regression](https://en.wikipedia.org/wiki/Logistic_regression)  
-\[3\][https://stats.stackexchange.com/questions/88603/why-is-logistic-regression-a-linear-model](https://stats.stackexchange.com/questions/88603/why-is-logistic-regression-a-linear-model)
+\[1] [https://en.wikipedia.org/wiki/Logit](https://en.wikipedia.org/wiki/Logit)  
+\[2] [https://en.wikipedia.org/wiki/Logistic\_regression](https://en.wikipedia.org/wiki/Logistic_regression)  
+\[3] [https://stats.stackexchange.com/questions/88603/why-is-logistic-regression-a-linear-model](https://stats.stackexchange.com/questions/88603/why-is-logistic-regression-a-linear-model)
 
 ## Why isn't logistic regression called logistic classification?
 
