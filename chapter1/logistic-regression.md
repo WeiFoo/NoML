@@ -164,6 +164,52 @@ This is the same as logistic regression.
 
 #### A set of independent binary regressions
 
+One fairly simple way to arrive at the multinomial logit model is to imagine, for K possible outcomes, running K-1 independent binary logistic regression models, in which one outcome is chosen as a "pivot" and then the other K-1 outcomes are separately regressed against the pivot outcome.
+
+ $$
+ ln\frac{Pr(Y_i = 1)}{P(Y_i = K)} = \beta_1 X_i
+ $$ 
+ 
+ $$
+ln\frac{Pr(Y_i = 2)}{P(Y_i = K)} = \beta_2 X_i
+$$
+
+$$
+\dots \dots
+$$
+$$
+ln\frac{Pr(Y_i = K-1)}{P(Y_i = K)} = \beta_{K-1} X_i
+$$
+
+
+Note that we have introduced separate sets of regression coefficients, one for each possible outcome. If we exponentiate both sides, and solve for the probabilities, we get:
+
+$$
+Pr(Y_i = 1) = Pr(Y_i = K) e^{\beta_1X_i}
+$$$$Pr(Y_i = 2) = Pr(Y_i = K) e^{\beta_2X_i}
+$$$$
+\dots \dots
+$$$$
+Pr(Y_i = K-1) = Pr(Y_i = K) e^{\beta_{K-1}X_i}
+$$
+
+Using the fact that all K of the probabilities must sum to one, we find:
+$$
+Pr(Y_i = K) = 1 - \sum_{k=1}^{K-1}Pr(Y_i = K)e^{\beta_kX_i} \Rightarrow Pr(Y_i = K) = \frac{1}{1+\sum_{k=1}^{K-1}e^{\beta_kX_i}}
+$$
+
+We can use this to find the other probabilities:
+$$
+ Pr(Y_i = 1) = \frac{e^{\beta_1Xi}}{1+ \sum_{k=1}^{K-1}e^{\beta_kX_i}}
+$$$$
+Pr(Y_i = 2) = \frac{e^{\beta_2Xi}}{1+ \sum_{k=1}^{K-1}e^{\beta_kX_i}}
+$$$$
+\dots \dots$$$$
+Pr(Y_i = K-1) = \frac{e^{\beta_{K-1}Xi}}{1+ \sum_{k=1}^{K-1}e^{\beta_kX_i}}
+$$
+
+The fact that we run multiple regressions reveals why the model relies on the assumption of independence of irrelevant alternatives described above.
+
 
 
 #### Sigmox  
