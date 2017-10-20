@@ -187,7 +187,26 @@ $$
 
 ## Compare logistic regression with SVM
 
-[1] [Chinese reference](https://plushunter.github.io/2017/01/12/机器学习算法系列（3）：逻辑斯谛回归/)
+Similarity:
+
+* classification algo
+* supervised learning
+* discriminative model
+* both can be used for non-leaner classification by kernel trick
+* both objective is to find a hyperplane
+* 都能减少离群点的影响?? I don't understand
+
+Difference:
+* loss functions: SVM: hinge loss, logistic regression: cross-entropy loss
+* when estimating the parameters, all samples get involved in LR while SVM only use the support vector samples. Since all samples are used for estimating parameters, we need to consider imbalance issue for each category.
+* LR model probability, SVM model hyperplan
+* LR is statistical method, SVM is geometrical method
+* LR avoid the effects of samples which are far away from the separating plane, while SVM only use support vector to mitigate the effects of samples which are far from hyperplane 
+* SVM is more sensitive to outliers since it only require support vectors for training while LR uses all training samples.
+
+
+[1] [Chinese reference1](https://plushunter.github.io/2017/01/12/机器学习算法系列（3）：逻辑斯谛回归/)
+[2] [Chinese reference2](https://chenrudan.github.io/blog/2016/01/09/logisticregression.html)
 
 
 
