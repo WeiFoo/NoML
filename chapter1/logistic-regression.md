@@ -1,4 +1,4 @@
-# Logistic Regreesion
+ # Logistic Regreesion
 
 **Logistic function or Sigmoid function**:  
 $$g(x) = \frac{1}{1+e^{-x}}$$,  which will take any $$x \in R$$, and output a value between 0 and 1.
@@ -24,14 +24,11 @@ $$g(\mu_i) = \beta_0 + \beta_1x+\beta_2x^2.....$$. where $$\mu$$ is the expected
 [3] [https://stats.stackexchange.com/questions/88603/why-is-logistic-regression-a-linear-model](https://stats.stackexchange.com/questions/88603/why-is-logistic-regression-a-linear-model)
 
 ## Why isn't logistic regression called logistic classification?
-To condense, the output of a logistic regression model is (a transformation of) 𝔼(Y|X)
-E
-(
-Y
-|
-X
-)
-.  That's what makes it a regression model You can take that output and perform classification with it, but that doesn't make the model a classifier.
+Logistic regression was called regression long before terms like supervised learning come along and regreresion does not, in general, imply continuous outcomes.
+
+Logistic regression is not a classification algorithm on its own. It's only a classification algorithm in combination with a decision rule that makes 
+In addition, logistic regreesion technically is on continuous variable: It is regressoon on the logit of the event, that is $$log(\frac{p}{1-p})$$, where p is the probability of the event.
+
 
 [1] [https://www.quora.com/Why-is-logistic-regression-called-regression-if-it-doesnt-model-continuous-outcomes](https://www.quora.com/Why-is-logistic-regression-called-regression-if-it-doesnt-model-continuous-outcomes)
 
