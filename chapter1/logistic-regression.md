@@ -161,6 +161,13 @@ This is the same as logistic regression.
 * Build binary classifier for each category, one-verus- all
 * Softmax
 
+
+#### A set of independent binary regressions
+
+
+
+#### Sigmox  
+
 More:
 
 Properties of Softmax:
@@ -206,7 +213,8 @@ Difference:
 
 
 [1] [Chinese reference1](https://plushunter.github.io/2017/01/12/机器学习算法系列（3）：逻辑斯谛回归/)
-[2] [Chinese reference2](https://chenrudan.github.io/blog/2016/01/09/logisticregression.html)
+
+[2] [Chinese reference2 浅析Logistics Regression](https://chenrudan.github.io/blog/2016/01/09/logisticregression.html)
 
 
 
