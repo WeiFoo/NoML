@@ -1,0 +1,34 @@
+{
+    "author": "Wei Fu <wfu@ncsu.edu>",
+    "description": "This is a notebook for machine learning interview",
+    "extension": null,
+    "generator": "site",
+    "links": {
+        "sharing": {
+            "all": null,
+            "facebook": null,
+            "google": null,
+            "twitter": null,
+            "weibo": null
+        }
+    },
+    "output": null,
+    "pdf": {
+        "fontSize": 12,
+        "footerTemplate": null,
+        "headerTemplate": null,
+        "margin": {
+            "bottom": 36,
+            "left": 62,
+            "right": 62,
+            "top": 36
+        },
+        "pageNumbers": false,
+        "paperSize": "a4"
+    },
+    "plugins": [
+        "mathjax"],
+    "pluginsConfig": {},
+    "title": "NoML",
+    "variables": {}
+}
