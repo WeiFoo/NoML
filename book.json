@@ -27,7 +27,7 @@
         "paperSize": "a4"
     },
     "plugins": [
-        "mathjax"],
+        "katex"],
     "pluginsConfig": {},
     "title": "NoML",
     "variables": {}
