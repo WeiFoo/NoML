@@ -91,6 +91,52 @@ Since we assume that all the samples are generated IID, then for all N samples, 
  $$
  P\left(Y|X;\theta\right)=\prod_{i=1}^N{\left(h_{\theta}\left(x^{\left(i\right)}\right)^{y^{\left(i\right)}}\left(1-h_{\theta}\left(x^{\left(i\right)}\right)^{1-y^{\left(i\right)}}\right)\right)}
  $$ 
+ 
+ $$
+ L\left(\theta\right)=P\left(\overrightarrow{Y}|X;\theta\right) 
+ $$
+To estimate the parameters $$\theta$$, we take the log of the above expression, then we get log-liklihood function:
+$$
+l\left(\theta\right)=\sum_{i=1}^N{\log l\left(\theta\right)}
+
+=\sum_{i=1}^N{y^{\left(i\right)}\log\left(h_{\theta}\left(x^{\left(i\right)}\right)\right)+\left(1-y^{\left(i\right)}\right)\log\left(1-h_{\theta}\left(x^{\left(i\right)}\right)\right)}
+$$
+
+You might feel familiar with this. Right! Maximizing the log likelihood is actually minimizing the cross entropy error.
+For now, we just ignore the summation term and consider very single parameter $$\theta_j$$, we take the derivative with respective to $$\theta_j$$
+
+$$
+\frac{\partial}{\partial\theta_j}l\left(\theta\right)=\left(y\frac{1}{h_{\theta}\left(x\right)}-\left(1-y\right)\frac{1}{1-h_{\theta}\left(x\right)}\right)\frac{\partial}{\partial\theta_j}h_{\theta}\left(x\right)
+$$
+$$
+=\left(\frac{y\left(1-h_{\theta}\left(x\right)\right)-\left(1-y\right)h_{\theta}\left(x\right)}{h_{\theta}\left(x\right)\left(1-h_{\theta}\left(x\right)\right)}\right)h_{\theta}\left(x\right)\left(1-h_{\theta}\left(x\right)\right)\frac{\partial}{\partial\theta_j}\theta^Tx
+$$
+
+$$
+=\left(y-h_{\theta}\left(x\right)\right)x_j
+$$
+
+Then, we can update the parameters by:
+$$
+\theta_j:=\theta_j+a\left(y^{\left(i\right)}-h_{\theta}\left(x^{\left(i\right)}\right)\right)x_{j}^{\left(i\right)}
+$$
+
+## Can logistic regression work on data that may not be separable by a linear boundary? 
+
+Yes, kernel trick, project data to higher dimension feature space, which might have a hyperplane to separate the data. 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
