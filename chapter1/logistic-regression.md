@@ -19,11 +19,23 @@ It's called a generalized linear model **not because** the estimated probability
 More generally, the Generalized Linear Model is of the form   
 $$g(\mu_i) = \beta_0 + \beta_1x+\beta_2x^2.....$$. where $$\mu$$ is the expected value of the response given the covariates.
 
-\[1] [https://en.wikipedia.org/wiki/Logit](https://en.wikipedia.org/wiki/Logit)  
-\[2] [https://en.wikipedia.org/wiki/Logistic\_regression](https://en.wikipedia.org/wiki/Logistic_regression)  
-\[3] [https://stats.stackexchange.com/questions/88603/why-is-logistic-regression-a-linear-model](https://stats.stackexchange.com/questions/88603/why-is-logistic-regression-a-linear-model)
+[1] [https://en.wikipedia.org/wiki/Logit](https://en.wikipedia.org/wiki/Logit)  
+[2] [https://en.wikipedia.org/wiki/Logistic\_regression](https://en.wikipedia.org/wiki/Logistic_regression)  
+[3] [https://stats.stackexchange.com/questions/88603/why-is-logistic-regression-a-linear-model](https://stats.stackexchange.com/questions/88603/why-is-logistic-regression-a-linear-model)
 
 ## Why isn't logistic regression called logistic classification?
+To condense, the output of a logistic regression model is (a transformation of) 𝔼(Y|X)
+E
+(
+Y
+|
+X
+)
+.  That's what makes it a regression model.
+
+You can take that output and perform classification with it, but that doesn't make the model a classifier.
+
+[1] [https://www.quora.com/Why-is-logistic-regression-called-regression-if-it-doesnt-model-continuous-outcomes](https://www.quora.com/Why-is-logistic-regression-called-regression-if-it-doesnt-model-continuous-outcomes)
 
 ## Why logistic regression use sigmoid function?
 
