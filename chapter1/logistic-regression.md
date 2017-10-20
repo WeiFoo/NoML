@@ -93,7 +93,7 @@ Since we assume that all the samples are generated IID, then for all N samples, 
  $$ 
  
  $$
- L\left(\theta\right)=P\left(\overrightarrow{Y}|X;\theta\right) 
+ L\left(\theta\right)=P\left({Y}|X;\theta\right) 
  $$
 To estimate the parameters $$\theta$$, we take the log of the above expression, then we get log-liklihood function:
 $$
