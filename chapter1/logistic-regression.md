@@ -35,6 +35,7 @@ In addition, logistic regreesion technically is on continuous variable: It is re
 
 
 [1] [https://www.quora.com/Why-is-logistic-regression-called-regression-if-it-doesnt-model-continuous-outcomes](https://www.quora.com/Why-is-logistic-regression-called-regression-if-it-doesnt-model-continuous-outcomes)
+
 [2] https://stats.stackexchange.com/questions/127042/why-isnt-logistic-regression-called-logistic-classification
 
  
@@ -46,16 +47,47 @@ Yes, we can use others. any non-linear function will do. But sigmoid function ha
 * It's a simple way to introduce  non-linearity to the model 
 
 Other motivations:
-Sigmoid outputs the conditional prob of the prediction. The "odds ratio" is defined as $$\frac{p}{1-p}$$, the ratio between the prob an event occurs and the prob the event doesn't occur. If you take the natural log of this odds' ratio, we get **logit function** $$logit(p(y=1|X))=log(\frac{p}{1-p})$$.
+Sigmoid outputs the conditional prob of the prediction. The "odds ratio" is defined as $$\frac{p}{1-p}$$, the ratio between the prob an event occurs and the prob the event doesn't occur. If you take the natural log of this odds' ratio, we get **logit function** 
 
-Let's use this log-transformation to model the relationship between our variable and the target variable, $$logit(p(y=1|X))=log(\frac{p}{1-p}) = \beta_0 + \beta_1x_1+....$$,
-We're interested in $$p(y=1|X)$$, then take the inverse of this logit function , we get the logistic sigmoid  $$logit^{-1}(p(y=1|x))=\frac{1}{1+e^{-{\beta_0 + \beta_1x_1+....}}}$$
+$$
+logit(p(y=1|X))=log(\frac{p}{1-p})
+$$
+
+Let's use this log-transformation to model the relationship between our variable and the target variable,
+$$
+ logit(p(y=1|X))=log(\frac{p}{1-p}) = \beta_0 + \beta_1x_1+....
+$$
+
+We're interested in $$p(y=1|X)$$, then take the inverse of this logit function , we get the logistic sigmoid 
+$$
+logit^{-1}(p(y=1|x))=\frac{1}{1+e^{-{\beta_0 + \beta_1x_1+....}}}
+$$
 
 [1] https://www.quora.com/Logistic-Regression-Why-sigmoid-function
 
 
-## How to update logistic regression parameters?
+## How to update(estimate) logistic regression parameters?[THIS IS LONG]
 
+Suppose the samples are generated from bernoulli process and the results(0/1) will follow Bernoulli distribution. Suppose the prob of 1 is $$h_\theta(x)$$, then prob of 0 is 1-$$h_\theta(x)$$.
+
+For the i-th sample, the probability can be written as:
+
+$$
+P(y^{(i)}=1|x^{(i)};\theta )=h_\theta{(x^{(i)})}\\
+
+P(y^{(i)}=0  |x^{(i)};\theta )=1- h_\theta{(x^{(i)})}
+$$
+
+Then combine them together, the prob of correct prediction on i-th sample is:
+$$
+P(y^{(i)}|x^{(i)};\theta)=(h_\theta(x^{(i)})^{y(i)})·（1-h_\theta(x^{(i)}))^{1-y(i)}
+$$
+
+Since we assume that all the samples are generated IID, then for all N samples, the probability distribution can be expressed as:
+
+ $$
+ P\left(Y|X;\theta\right)=\prod_{i=1}^N{\left(h_{\theta}\left(x^{\left(i\right)}\right)^{y^{\left(i\right)}}\left(1-h_{\theta}\left(x^{\left(i\right)}\right)^{1-y^{\left(i\right)}}\right)\right)}
+ $$ 
 
 
 
