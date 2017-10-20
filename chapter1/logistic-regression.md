@@ -185,6 +185,12 @@ $$
 J(\theta)=-\frac{1}{N}\sum_i^N\sum_j^KP(y_i=j)log\frac{e^{\theta_i^Tx}}{\sum e^{\theta_k^Tx}}
 $$
 
+## Compare logistic regression with SVM
+
+[1] [Chinese reference](https://plushunter.github.io/2017/01/12/机器学习算法系列（3）：逻辑斯谛回归/)
+
+
+
 
 
 
