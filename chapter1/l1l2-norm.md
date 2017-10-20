@@ -24,7 +24,7 @@ You can see that, for L1, the meeting point mostly happens at the corner while L
 ![](https://pic4.zhimg.com/v2-648584bcfaa1020d62861208775462df_b.png)
 
 ## Why L1 is not stable?
-
+??????? need help
 ![](https://pic1.zhimg.com/v2-e8734136ff4da41b748f16e514971aa0_b.png)
 
 
