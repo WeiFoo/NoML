@@ -46,12 +46,10 @@ Yes, we can use others. any non-linear function will do. But sigmoid function ha
 * It's a simple way to introduce  non-linearity to the model 
 
 Other motivations:
-sigmoid outputs the conditional prob of the prediction. The "odds ratio" is defined as $$\frac{p}{1-p}$$, the ratio between the prob an event occurs and the prob the event doesn't occur. If you take the natural log of this odds' ratio, we get **logit function**
-$$logit(p(y=1|X))=log(\frac{p}{1-p})$$,
-Let's use this log-transformation to model the relationship between our variable and the target variable.
-$$logit(p(y=1|X))=log(\frac{p}{1-p}) = \beta_0 + \beta_1x_1+....$$,
-We're interested in $$p(y=1|X)$$, then take the inverse of this logit function , we get the logistic sigmoid 
-$$logit^{-1}(p(y=1|x))=\frac{1}{1+e^{-{\beta_0 + \beta_1x_1+....}}}$$
+Sigmoid outputs the conditional prob of the prediction. The "odds ratio" is defined as $$\frac{p}{1-p}$$, the ratio between the prob an event occurs and the prob the event doesn't occur. If you take the natural log of this odds' ratio, we get **logit function** $$logit(p(y=1|X))=log(\frac{p}{1-p})$$.
+
+Let's use this log-transformation to model the relationship between our variable and the target variable, $$logit(p(y=1|X))=log(\frac{p}{1-p}) = \beta_0 + \beta_1x_1+....$$,
+We're interested in $$p(y=1|X)$$, then take the inverse of this logit function , we get the logistic sigmoid  $$logit^{-1}(p(y=1|x))=\frac{1}{1+e^{-{\beta_0 + \beta_1x_1+....}}}$$
 
 [1] https://www.quora.com/Logistic-Regression-Why-sigmoid-function
 
