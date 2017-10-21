@@ -92,6 +92,7 @@ $$
 IG(S, A) = E(S) - I(S,A) = E(S) - \sum\frac{|S_i|}{|S|}E(S_i)
 $$
 
+Maximize the information gain is equivalent to minimize the average entropy, because $$E(S)$$ is constant for all attributes.
 
 
 
