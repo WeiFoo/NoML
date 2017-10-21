@@ -12,3 +12,36 @@
   * __instability__: sensitive to training set rotation due to its orthogonal decision boundaries
   
   [https://github.com/ShuaiW/ml-interview#Decision tree](https://github.com/ShuaiW/ml-interview#SVM)
+  
+
+### Least Square Regression Tree
+
+__Input__: Training data D
+__Output__: regression tree f(x)
+__Splitting Criteria__: MSE
+
+1. Obtain the best optimal variable(feature) $$j$$ and splitting pint $$s$$, according to:
+$$
+\min_{j,s}\left[\min_{c_1}\sum_{x_i\in R_1(j,s)}(y_i-c_1)^2+\min_{c_2}\sum_{x_i\in R_2(j,s)}(y_i-c_2)^2\right] \:\:\:\:\: (1)
+$$
+
+Iterate all variable $$j$$ and for a given splitting point $$s$$, we need to get a pair of $$(j,s)$$ to minimize formula (1)
+
+2. Divide the training data D with $$(j,s)$$ and output the values
+  $$
+  R_1(j,s)=\{x|x^{(j)}\le s\} \quad ,\quad R_2(j,s)=\{x|x^{(j)}\gt s\}
+  $$
+  
+  $$
+  \hat{c}_m=\frac{1}{N_m}\sum_{x_i\in R_m(j,s)}y_i, x\in R_m, m=1,2
+  $$
+  
+3. Repeat step 1 and 2  to divide regions $$R_1$$ and $$R_2$$ until stopping criteria is satisfied.
+
+4. Divide the input space into $$M$$ regions$$R_1, R_2,...R_M$$, output the regression tree:
+$$
+f(x)=\sum_{m=1}^Mc_mI(x\in R_m)
+$$
+  
+
+
