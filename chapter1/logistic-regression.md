@@ -218,6 +218,7 @@ $$
 B_{k+1} = B_k + \frac{y_ky_k^T}{y_k^Ts_k} - \frac{B_ks_ks_k^TB_k^T}{s_k^TB_ks_k}
 $$
 
+##### Algorithm
 
 u
 =
@@ -229,7 +230,7 @@ v
 B
 k 
 s
-k
+k 
 {\displaystyle \mathbf {v} =B_{k}\mathbf {s} _{k}}, we can obtain:[
 
 [1][Hessian Matrix of Logistic function](http://personal.psu.edu/jol2/course/stat597e/notes2/logit.pdf) 
