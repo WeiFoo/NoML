@@ -164,7 +164,7 @@ Therefore, we need to use other quasi-newton methods, which is to estimate $$H^{
 
 ##### Secant condition 
 
-Taylor expansion around $$x_{k+1}$$ is,
+After k+1 iterations, Taylor expansion around $$x_{k+1}$$ is,
 
 $$ 
  f(x) \approx f(x) + f(x_{k+1})'(x-x_{k+1}) + \frac{1}{2}f(x_{k+1})''(x-x_{k+1})^2
@@ -185,11 +185,55 @@ $$
 Let $$s_k = x_k - x_{k+1}$$ and $$y_k = g_{k+1} - g_k$$, then we have the secant condition as:
 
 $$
- y_k = H_{k+1}x_k
+ y_k = H_{k+1}s_k \:\:\:\:\:\:\:\:\:\:(1)
+$$
+
+##### Method
+To estimate $$H^{-1}_k$$, we use $$B_k \approx H_{k}$$, then we hope that we can use the following rule to update:
+
+$$
+B_{k+1} = B_k + \Delta B_k \:\:\:\:\:\:\:\:\:\:(2)
+
+$$
+We always set $$B_0 $$ as unit matrix $$I$$, then we suppose the structure of $$\Delta B_k$$ as follows:
+
+$$
+\Delta B^k = \alpha uu^T + \beta vv^T
+$$
+
+According to the secant condition (1), we have the following function,
+
+$$
+y_k = B_ks_k+(\alpha u^Ts_k)u+(\beta v^Ts_k)v
+$$
+let $$\alpha u^Ts_k = 1$$ and $$\beta v^Ts_k=1$$,  Choosing $$u=y_k$$ and $$v = B_ks_k$$, we can obtain:
+
+$$
+\alpha  = \frac{1}{y_k^Ts_k}, \qquad \beta = - \frac{1}{s_k^TB_ks_k}
+$$
+
+Finally, we substitute $$\alpha$$ and $$\beta$$ into (2) and get the update equation of $$B_{k+1}$$
+
+$$
+B_{k+1} = B_k + \frac{y_ky_k^T}{y_k^Ts_k} - \frac{B_ks_ks_k^TB_k^T}{s_k^TB_ks_k}
 $$
 
 
+u
+=
+y
+k
+{\displaystyle \mathbf {u} =\mathbf {y} _{k}} and 
+v
+=
+B
+k 
+s
+k
+{\displaystyle \mathbf {v} =B_{k}\mathbf {s} _{k}}, we can obtain:[
+
 [1][Hessian Matrix of Logistic function](http://personal.psu.edu/jol2/course/stat597e/notes2/logit.pdf) 
+[2][BFGS wiki](https://en.wikipedia.org/wiki/Broyden–Fletcher–Goldfarb–Shanno_algorithm)
 
 ## Can logistic regression work on data that may not be separable by a linear boundary? 
 
