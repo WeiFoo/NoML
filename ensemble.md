@@ -12,7 +12,7 @@ Bagging, boosting, stacking all are so-called ''meta-algorithms'': Approach to c
 [1] [https://stats.stackexchange.com/questions/18891/bagging-boosting-and-stacking-in-machine-learning](https://stats.stackexchange.com/questions/18891/bagging-boosting-and-stacking-in-machine-learning)
 ### Bagging
 
-Given a standard training set $$D$$ of size n, bagging generates m new training sets $$D_{i}$$, each of size n′, by sampling from D uniformly and with replacement. By sampling with replacement, some observations may be repeated in each $$D_{i}$$. If $$n′=n$$, then for large n the set $$D_{i}$$ is expected to have the fraction $$ (1 - 1/e)(≈63.2\% )$$ of the unique examples of D, the rest being duplicates This kind of sample is known as a __bootstrap sample__. The $$m$$ models are fitted using the above $$m$$ bootstrap samples and combined by __averaging the output__ (for regression) or __voting__ (for classification)
+Given a standard training set $$D$$ of size n, bagging generates m new training sets $$D_{i}$$, each of size n′, by sampling from D uniformly and with replacement. By sampling with replacement, some observations may be repeated in each $$D_{i}$$. If $$n'=n$$, then for large n the set $$D_{i}$$ is expected to have the fraction $$ (1 - 1/e)(\approx 63.2\% )$$ of the unique examples of D, the rest being duplicates This kind of sample is known as a __bootstrap sample__. The $$m$$ models are fitted using the above $$m$$ bootstrap samples and combined by __averaging the output__ (for regression) or __voting__ (for classification)
 
 [1] [https://en.wikipedia.org/wiki/Bootstrap_aggregating](https://en.wikipedia.org/wiki/Bootstrap_aggregating)
 ### Boosting
