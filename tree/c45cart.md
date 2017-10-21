@@ -47,7 +47,7 @@ $$
 ### Classification Tree
 
 
-#### Gini index
+#### Gini index(Only used by CART)
 
 Suppose we have $$K$$ classes in a classification problem, $$p_k$$ denotes the probably that the samples with label $$k$$, then the Gini index is defined as:
 $$
@@ -67,12 +67,35 @@ $$
 \text{Gini}(D,A)=\frac{|D_1|}{|D|}\text{Gini}(D_1)+\frac{|D_2|}{|D|}\text{Gini}(D_2)\tag{5.25}
 $$
 
-Similar to entropy, the higher value of Gini index, the more uncertain of the set it is. 
+Similar to entropy, the higher value of Gini index, the more uncertain of the set it is. Therefore, we want to minimize Gini index.
 [1][http://www.ke.tu-darmstadt.de/lehre/archiv/ws0809/mldm/dt.pdf](http://www.ke.tu-darmstadt.de/lehre/archiv/ws0809/mldm/dt.pdf)
 
 [2] [《统计学习方法》笔记 (七) - 决策树(下)](http://daniellaah.github.io/2017/Statistical-Learning-Notes-Chapter5-DecisionTree-2.html)
 
-#### Entropy/Information Gain
+[3][https://en.wikipedia.org/wiki/Decision_tree_learning#Gini_impurity](https://en.wikipedia.org/wiki/Decision_tree_learning#Gini_impurity)
+
+#### Entropy/Information Gain(Used by C4.5)
+
+Given a set of samples $$S$$, Entropy is defined as below:
+$$
+E(S)= -\sum_{i=1}^{K} p_i log(p_i) 
+$$
+where $$p_i$$ represents the percentage of each class present in the child node that results form a split in the tree. It generally shows the amount of unorderedness in the class distribution of $$S$$.
+When we split the whole set $$S$$ into $$S_i$$ by feature $$A$$,  the  weighted average over all sets reultsing form the silage is:
+$$
+I(S,A)  = \sum_{i}\frac{|S_i|}{|S|}E(S_i)
+$$
+
+Information gain is defined as information gain = Entropy(parent) - Weighted Sum of Entropy(Children),
+
+$$
+IG(S, A) = E(S) - I(S,A) = E(S) - \sum\frac{|S_i|}{|S|}E(S_i)
+$$
+
+
+
+
+
 
   
 
