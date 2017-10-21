@@ -16,8 +16,8 @@
 
 ### Least Square Regression Tree
 
-__Input__: Training data D
-__Output__: regression tree f(x)
+__Input__: Training data $$D$$
+__Output__: regression tree $$f(x)$$
 __Splitting Criteria__: MSE
 
 1. Obtain the best optimal variable(feature) $$j$$ and splitting pint $$s$$, according to:
@@ -42,6 +42,39 @@ Iterate all variable $$j$$ and for a given splitting point $$s$$, we need to get
 $$
 f(x)=\sum_{m=1}^Mc_mI(x\in R_m)
 $$
+
+
+### Classification Tree
+
+
+#### Gini index
+
+Suppose we have $$K$$ classes in a classification problem, $$p_k$$ denotes the probably that the samples with label $$k$$, then the Gini index is defined as:
+$$
+\text{Gini}(p)=\sum_{k=1}^Kp_k(1-p_k)=1-\sum_{k=1}^Kp_k^2
+$$
+
+For a given sample set $$D$$, the Gini index is:
+
+$$
+ Gini(D) = 1- \sum_{k=1}^{K}(\frac{|C_k|}{|D|})^2
+ $$
+where $$K$$ is the total number of classes and $$C_k$$ is the number of samples belong to class $$K$$.
+
+If we divide $$D$$ into $$D_1$$ and $$D_2$$ based on some value $$a$$ of feature $$A$$, then the average Gini index is:
+
+$$
+\text{Gini}(D,A)=\frac{|D_1|}{|D|}\text{Gini}(D_1)+\frac{|D_2|}{|D|}\text{Gini}(D_2)\tag{5.25}
+$$
+
+[1][http://www.ke.tu-darmstadt.de/lehre/archiv/ws0809/mldm/dt.pdf](http://www.ke.tu-darmstadt.de/lehre/archiv/ws0809/mldm/dt.pdf)
+
+[2] [《统计学习方法》笔记 (七) - 决策树(下)](http://daniellaah.github.io/2017/Statistical-Learning-Notes-Chapter5-DecisionTree-2.html)
+
+
+
+#### Entropy/Information Gain
+
   
 
 
