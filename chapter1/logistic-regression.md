@@ -228,6 +228,7 @@ $$
 6. Update $$ y_k = g_{k+1} - g_{k}$$
 7. Update $$B_{k+1} = B_k +\frac{y_ky_k^T}{y_k^Ts_k} - \frac{B_ks_ks_k^TB_k^T}{s_k^TB_ks_k}$$
 
+Note: in step 2, we have to calculate $$B_k^{-1}$$, which can be done by [Sherman-Morrison formula](https://en.wikipedia.org/wiki/Sherman–Morrison_formula).
 
  
  
@@ -373,8 +374,22 @@ Difference:
 
 
 
+## Compare logistic regression with Naive bayes
 
+Similarity:
 
+* classification algo
+* supervised learning
+* when the conditional probability$$P(X|Y=c_k)$$ in naive Bayes is assumed to be Gaussian IID, then the expression of $$P(Y=1|X)$$ is the same as logistic regression.
+
+Difference:
+* Logistctic regression is discriminative model, it learns $$P(y|x)$$ while Naive Bayes is Discriminative, it learns $$P(x,y)$$.
+* The former need iterative calculation, the latter one doesn't 
+* When data is limited, Naive Bayes is better then Logistic regression; Otherwise, Logistic regression is better than Naive Bayes when large amount of data is available.
+* Since Naive Bayes assumes Gaussian IID $$P(X|y)$$, which means features are independent; if this does not hold, then Naive Bayes is not better than LR.
+
+[1][Chinese reference.  浅析Logistics Regression](https://chenrudan.github.io/blog/2016/01/09/logisticregression.html)
+ 
 
 
 

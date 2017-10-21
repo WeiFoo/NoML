@@ -1,5 +1,9 @@
 # L1/ L2 Regularization
 
+From Bayes perspective, regularization is to add a prior knowledge to the model. For example, L2 is similar to 
+add a gaussian distribution prior with $$N(0,1/\lambda)$$. When $$\lamda = 0$$, it means no regularization, then in the other words, we can treat it as covariance is infinite; when $$\lambda \rightarrow \inf $$, then convirance is to zero, then the variance of the parameters in the model is small, consequently, the model is more stable.
+
+
 ## What's L1 and L2 regularization
 
 L2 is the sum of the sure of the weights
