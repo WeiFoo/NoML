@@ -23,4 +23,5 @@
 * [Clustering](clustering.md)
 * [Meta algorithms](ensemble.md)
   * [Adaboost](ensemble/adaboost.md)
+  * [Gradient Boosting Decision Tree](ensemble/gradient-boosting-decision-tree.md)
 
