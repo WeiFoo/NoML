@@ -218,9 +218,8 @@ $$
 B_{k+1} = B_k + \frac{y_ky_k^T}{y_k^Ts_k} - \frac{B_ks_ks_k^TB_k^T}{s_k^TB_ks_k}
 $$
 
-##### Algorithm
+##### Algorith
 
-u
 =  
 y
 k
