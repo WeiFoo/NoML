@@ -96,10 +96,34 @@ Maximize the information gain is equivalent to minimize the average entropy, bec
 
 
 #### Information Gain Ratio
-The main issue with information gain is that it biases the decision tree against the attributes with a large number of distinct values. 
+The main issue with information gain is that it biases the decision tree against the attributes with a large number of distinct values. For example, the creditcard number attributes of a customer. Here we introduce intrinsic information of a split(How much information do we need to tell which branch an instance belongs to). It's defined as follows:
+
+$$
+IntI(S,A) = -\sum_{i}\frac{|S_i|}{|S|} log\frac{|S_i|}{|S|}
+$$
+Then we can see that attributes with higher intrinsic information are less useful. To reduce the information gain's bias towards multi-valued attributes, we take the number and size of branches into account when choosing an attribute, i.e, corrects the information gain by taking the intrisic information of split into account.
+The information gain ratio can be defined as:
+
+$$
+GR(S,A) = \frac{IG(S,A)}{IntI(S,A)}
+$$
+
+The higher, the better.
+[1] [http://www.ke.tu-darmstadt.de/lehre/archiv/ws0809/mldm/dt.pdf](http://www.ke.tu-darmstadt.de/lehre/archiv/ws0809/mldm/dt.pdf)
+
+
+
 
 
 #### Compare Gini index, information gain  and gain ratio
+
+* Information gain: based towards multivalued attributes.
+* Gain ratio: prefer unbalanced splits in which on partition is much smaller than the other.
+* Gini Index: 
+  * based towards multivalued attributes.
+  * favor equal-sized partitions  
+  
+[1][http://www.inf.unibz.it/dis/teaching/DWDM/slides2011/lesson5-Classification-2.pdf](http://www.inf.unibz.it/dis/teaching/DWDM/slides2011/lesson5-Classification-2.pdf)
 
 
 
