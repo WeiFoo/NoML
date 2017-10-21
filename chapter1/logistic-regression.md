@@ -149,7 +149,7 @@ $$
  
 Let $$\varphi'(w) = 0$$, then we get $$w = w^k-\frac{J'(w^k)}{J''(w^k)}$$, then we have the update rule:
 $$
-   w^{k+1} = w^k - \frac{J’(w^k)}{J’’(w^k)} = w^k - H_k^{-1}\cdot g_k
+   w^{k+1} = w^k - \frac{J'(w^k)}{J''(w^k)} = w^k - H_k^{-1}\cdot g_k
 $$
  
 In this method, we need a threshold $$\epsilon$$, when $$||g_k|| < \epsilon$$, stop updates. In this method, we also require that the 2nd order derivative of objective function J(w) exists. 
