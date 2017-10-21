@@ -17,7 +17,7 @@
   * NN Basic
   * [Word Embeeding](deep-learning/word-embeeding.md)
 * [Tree](tree.md)
-  * C4.5/CART
+  * [C4.5/CART](tree/c45cart.md)
   * RandomForests
   * XGBoost
 * [Clustering](clustering.md)
