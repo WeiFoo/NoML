@@ -22,4 +22,5 @@
   * XGBoost
 * [Clustering](clustering.md)
 * [Meta algorithms](ensemble.md)
+  * [Adaboost](ensemble/adaboost.md)
 
