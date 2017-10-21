@@ -21,5 +21,5 @@
   * RandomForests
   * XGBoost
 * [Clustering](clustering.md)
-* [Ensemble](ensemble.md)
+* [Meta algorithms](ensemble.md)
 
