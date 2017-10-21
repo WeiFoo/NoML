@@ -67,11 +67,10 @@ $$
 \text{Gini}(D,A)=\frac{|D_1|}{|D|}\text{Gini}(D_1)+\frac{|D_2|}{|D|}\text{Gini}(D_2)\tag{5.25}
 $$
 
+Similar to entropy, the higher value of Gini index, the more uncertain of the set it is. 
 [1][http://www.ke.tu-darmstadt.de/lehre/archiv/ws0809/mldm/dt.pdf](http://www.ke.tu-darmstadt.de/lehre/archiv/ws0809/mldm/dt.pdf)
 
 [2] [《统计学习方法》笔记 (七) - 决策树(下)](http://daniellaah.github.io/2017/Statistical-Learning-Notes-Chapter5-DecisionTree-2.html)
-
-
 
 #### Entropy/Information Gain
 
