@@ -225,8 +225,8 @@ $$
 3. Perform a one-dimensional optimizaiton (linear search) to find an acceptable stepsize, $$\lambda_k$$, so $$\lambda_k = \arg\limits_{\lambda} minf(x_k +\lambda*d_k)$$
 4. Set $$ s_k = \lambda_k * d_k $$, $$x_{k+1} = x_k + s_k$$.
 5. If$$||g_{k+1}||< \epsilon$$, algorithm terminates.
-6. $$y_k = g_{k+1} - g_{k}$$
-7. $$B_{k+1} = B_k +$$
+6. Update $$ y_k = g_{k+1} - g_{k}$$
+7. Update $$B_{k+1} = B_k +\frac{y_ky_k^T}{y_k^Ts_k} - \frac{B_ks_ks_k^TB_k^T}{s_k^TB_ks_k}$$
 
 
  
