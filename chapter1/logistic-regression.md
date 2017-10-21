@@ -219,18 +219,7 @@ B_{k+1} = B_k + \frac{y_ky_k^T}{y_k^Ts_k} - \frac{B_ks_ks_k^TB_k^T}{s_k^TB_ks_k}
 $$
 
 ##### Algorith
-
-=  
-y
-k
-{\displaystyle \mathbf {u} =\mathbf {y} _{k}} and 
-v
-=
-B
-k 
-s
-k  1. Obtain the direciton 
-{\displaystyle  \mathbf {v} =B_{k}\mathbf {s} _{k}}, we  
+ sd
  
 [1][Hessian Matrix of Logistic function](http://personal.psu.edu/jol2/course/stat597e/notes2/logit.pdf) 
 [2][BFGS wiki](https://en.wikipedia.org/wiki/Broyden–Fletcher–Goldfarb–Shanno_algorithm)
