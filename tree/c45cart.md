@@ -126,6 +126,19 @@ The higher, the better.
 [1][http://www.inf.unibz.it/dis/teaching/DWDM/slides2011/lesson5-Classification-2.pdf](http://www.inf.unibz.it/dis/teaching/DWDM/slides2011/lesson5-Classification-2.pdf)
 
 
+#### CART
+
+1. Given a set of training data $$D$$,  calculate Gini index (or IG) on all features. 
+  * For each feature $$A$$, we calculate Gini index if we divide $$D$$ into $$D_1$$ and $$D_2$$ when $$A=a$$  
+2. Select a pair of feature and split point  $$(A,a)$$ which has minimum Gini diix as the best feature and split.
+
+3. Divide $$D$$ into $$D_1$$ and $$D_2$$
+
+4. repeat step 1 and step 2 on $$D_1$$ and $$D_2$$ until stopping criteria is satisfied.
+
+5. return CART tree.
+
+
 
 
 
