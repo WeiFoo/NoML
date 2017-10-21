@@ -64,7 +64,7 @@ where $$K$$ is the total number of classes and $$C_k$$ is the number of samples 
 If we divide $$D$$ into $$D_1$$ and $$D_2$$ based on some value $$a$$ of feature $$A$$, then the average Gini index is:
 
 $$
-\text{Gini}(D,A)=\frac{|D_1|}{|D|}\text{Gini}(D_1)+\frac{|D_2|}{|D|}\text{Gini}(D_2)\tag{5.25}
+\text{Gini}(D,A)=\frac{|D_1|}{|D|}\text{Gini}(D_1)+\frac{|D_2|}{|D|}\text{Gini}(D_2)
 $$
 
 Similar to entropy, the higher value of Gini index, the more uncertain of the set it is. Therefore, we want to minimize Gini index.
@@ -93,6 +93,14 @@ IG(S, A) = E(S) - I(S,A) = E(S) - \sum\frac{|S_i|}{|S|}E(S_i)
 $$
 
 Maximize the information gain is equivalent to minimize the average entropy, because $$E(S)$$ is constant for all attributes.
+
+
+#### Information Gain Ratio
+The main issue with information gain is that it biases the decision tree against the attributes with a large number of distinct values. 
+
+
+#### Compare Gini index, information gain  and gain ratio
+
 
 
 
