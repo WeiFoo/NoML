@@ -138,6 +138,12 @@ The higher, the better.
 
 5. return CART tree.
 
+### CART pruning 
+
+
+
+
+
 
 
 
