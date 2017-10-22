@@ -140,13 +140,39 @@ The higher, the better.
 
 ### CART pruning 
 
+#### Reduced error pruning
+
+One of the simplest forms of pruning is reduced error pruning. Starting at the leaves, each node is replaced with its most popular class. If the prediction accuracy is not affected then the change is kept. While somewhat naive, reduced error pruning has the advantage of simplicity and speed.
+
+[1][https://en.wikipedia.org/wiki/Pruning_%28decision_trees%29](https://en.wikipedia.org/wiki/Pruning_%28decision_trees%29)
+
+#### Cost complexity pruning
+1. Generate a series of trees $$T_0, T_1, T_2,....T_n$$ where $$T_0$$is the initial tree and $$T_n$$ is the root alone.
+2. At step $$i$$, the tree is created by revmoing a subtree from  tree $$i-1$$ and replacing it with a leaf node with value chosen(majority vote) as in the tree building algorithm.
+  * Define the error rate of the tree $$T$$ over data sets $$S$$ as $$err(T, S)$$. The subtree that minimmizes
+  $$
+    \frac{err(prune(T,t),S)- err(T,S)}{|leaves(T)|-|leaves(prune(T,t))|}
+  $$
+is chosen for removal. The function $$prune(T,t)$$ defines the tree gotten by pruning the subtree $$t$$ from the tree $$T$$. Once the series of trees has been created, the best tree is chosen by cross-valididation on training data.
+
+Notes: 
+* Loss cost of tree T, is defined as:
+$$
+ err_a(T) = err(T) + a|T|   \:\:\: (2)
+$$
+* Loss cost of tree T-t, is defined as:
+
+$$
+err_a(T,t) = err(T,t)+ a|T-t|  \:\:\: (3)
+$$
+where $$t$$ is subtree, $$|T-t|$$ is the number of leaves after pruning $$t$$ subtree. IF let (2)=(3), we get:
+$$
+a = \frac{err(T,t)- err(T)}{|T|-|T-t|}
+$$
 
 
-
-
-
-
-
+[1][http://daniellaah.github.io/2017/Statistical-Learning-Notes-Chapter5-DecisionTree-2.html](http://daniellaah.github.io/2017/Statistical-Learning-Notes-Chapter5-DecisionTree-2.html)
+[2][https://en.wikipedia.org/wiki/Pruning_%28decision_trees%29](https://en.wikipedia.org/wiki/Pruning_%28decision_trees%29)
 
 
   
