@@ -42,7 +42,8 @@ array([[ 0.43785847,  0.19315602],
 <type 'numpy.ndarray'>
 
 ```
-or you can do ```np.array(x.values.tolist())```
+or you can do ```np.array(x.values.tolist())```. Note that in pandas, string is not the same as numpy, it's stored as object.As you noticed, attempting to coerce a python string into a fixed-with numpy string won't work in pandas. Instead, it always uses native python strings, which behave in a more intuitive way for most users. more at [https://stackoverflow.com/questions/34881079/pandas-distinction-between-str-and-object-types](https://stackoverflow.com/questions/34881079/pandas-distinction-between-str-and-object-types)
+
 
 
 
