@@ -1,6 +1,6 @@
 # NoML--No Machine Learning
 
-This is a  notebook for me to prepare ML interview. The basic idea is to collect the basic ML knowledge \(or questions\) that might have been asked or will be asked for an ML engineer interview. You might think that we can read a ML book, why do we need to create this notebook? Because sometimes, when we read a book, we get lost and  don't know what kind of question will be asked.
+This is a  notebook for me to prepare machine learning interview. The basic idea is to collect the basic ML knowledge \(or questions\) that might have been asked or will be asked for an ML engineer interview. You might think that we can read a ML book, why do we need to create this notebook? Because sometimes, when we read a book, we get lost and  don't know what kind of question will be asked.
 
 So the beauty of this book is to **collect questions or asked questions!**
 
