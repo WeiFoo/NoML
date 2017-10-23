@@ -1,5 +1,7 @@
 # Small tricks
 
+Before this, strongly suggest practice [pandas 10 minutes test drive](https://pandas.pydata.org/pandas-docs/stable/10min.html)
+
 ### Create train/test data in pandas
 
 #### Method 1
