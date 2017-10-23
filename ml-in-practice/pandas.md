@@ -74,7 +74,7 @@ One way is to use np.random.permutation(df.index) and then reindex the dataframe
 ### Selection
 
 #### selection by label
-We use pd.loc[] to select by label
+We use __pd.loc[]__ to select by label
 
 * A single label, e.g. 5 or 'a', (note that 5 is interpreted as a label of the index. This use is not an integer position along the index)
 * A list or array of labels ['a', 'b', 'c']
@@ -84,7 +84,7 @@ We use pd.loc[] to select by label
 
 #### selection by position
 
-We use pd.iloc[] to select by position
+We use __pd.iloc[]__ to select by position
 * An integer e.g. 5
 * A list or array of integers [4, 3, 0]
 * A slice object with ints 1:7
