@@ -91,7 +91,8 @@ We use __pd.iloc[]__ to select by position
 * A boolean array
 * A callable, see Selection By Callable
   
-      
+note: this,```In [69]: df1.iloc[1, 1]```, is also equivalent to ``df1.iat[1,1]``
+   
 
 
 
