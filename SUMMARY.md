@@ -25,5 +25,6 @@
   * [Adaboost](ensemble/adaboost.md)
   * [Gradient Boosting Decision Tree](ensemble/gradient-boosting-decision-tree.md)
 * [ML in practice](ml-in-practice.md)
-  * [Small tricks](ml-in-practice/asdf.md)
+  * [Pandas](ml-in-practice/pandas.md)
+  * [Scikit-Learn](ml-in-practice/scikit-learn.md)
 
