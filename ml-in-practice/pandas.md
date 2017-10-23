@@ -45,9 +45,34 @@ array([[ 0.43785847,  0.19315602],
 or you can do ```np.array(x.values.tolist())```. Note that in pandas, string is not the same as numpy, it's stored as object.As you noticed, attempting to coerce a python string into a fixed-with numpy string won't work in pandas. Instead, it always uses native python strings, which behave in a more intuitive way for most users. more at [https://stackoverflow.com/questions/34881079/pandas-distinction-between-str-and-object-types](https://stackoverflow.com/questions/34881079/pandas-distinction-between-str-and-object-types)
 
 
+### Shuffle pandas rows
+
+One way is to use np.random.permutation(df.index) and then reindex the dataframe based on the new random_index, if you want to set the index, use ```reset_index```
 
 
-#  
+```python
+>>> x
+          0         1
+0  0.179652  0.473597
+1  0.118624  0.172432
+2  0.080804  0.737197
+3  0.948585  0.248046
+>>> y = x.reindex(np.random.permutation(x.index))
+>>> y
+          0         1
+2  0.080804  0.737197
+3  0.948585  0.248046
+1  0.118624  0.172432
+0  0.179652  0.473597
+>>> y.reset_index(drop=True)
+          0         1
+0  0.080804  0.737197
+1  0.948585  0.248046
+2  0.118624  0.172432
+3  0.179652  0.473597
+```
+  
+      
 
 
 
