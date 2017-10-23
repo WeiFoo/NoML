@@ -71,6 +71,25 @@ One way is to use np.random.permutation(df.index) and then reindex the dataframe
 2  0.118624  0.172432
 3  0.179652  0.473597
 ```
+### Selection
+
+#### selection by label
+We use pd.loc[] to select by label
+
+* A single label, e.g. 5 or 'a', (note that 5 is interpreted as a label of the index. This use is not an integer position along the index)
+* A list or array of labels ['a', 'b', 'c']
+* A slice object with labels 'a':'f' (note that contrary to usual python slices, both the start and the stop are included!)
+* A boolean array
+
+
+#### selection by position
+
+We use pd.iloc[] to select by position
+* An integer e.g. 5
+* A list or array of integers [4, 3, 0]
+* A slice object with ints 1:7
+* A boolean array
+* A callable, see Selection By Callable
   
       
 
