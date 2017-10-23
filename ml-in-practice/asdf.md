@@ -1,4 +1,4 @@
-# Small tricks
+# Pandas
 
 Before this, strongly suggest practice [pandas 10 minutes test drive](https://pandas.pydata.org/pandas-docs/stable/10min.html)
 
@@ -42,7 +42,6 @@ array([[ 0.43785847,  0.19315602],
 <type 'numpy.ndarray'>
 
 ```
-
 or you can do ```np.array(x.values.tolist())```
 
 
