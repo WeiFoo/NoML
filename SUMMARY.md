@@ -18,8 +18,8 @@
   * [Word Embeeding](deep-learning/word-embeeding.md)
 * [Tree](tree.md)
   * [C4.5/CART](tree/c45cart.md)
-  * RandomForests
-  * XGBoost
+  * [RandomForests](tree/randomforests.md)
+  * [XGBoost](tree/xgboost.md)
 * [Clustering](clustering.md)
 * [Meta algorithms](ensemble.md)
   * [Adaboost](ensemble/adaboost.md)
