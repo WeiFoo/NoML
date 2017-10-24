@@ -34,3 +34,25 @@ we have inner product format in function (1), then we define the kernel as $$K(x
 * Kernel selection and parameter tuning.
 * Originally for binary classification, not for multi-classification 
 * High algorithmic complexity and extensive memory requirement required by quadratic programming in large-scale tasks. 
+
+
+## What's SMO(sequential minimal optimization)?
+
+SMO is an iterative algorithm for solving  SVM dual problem. SMO breaks this problem into a series of smallest possible sub-problems, which are then solved analytically. Because of the linear equality constraint involving the Lagrange multipliers $$\alpha_i$$, the smallest possible problem involves two such multipliers. Then, for any two multipliers   $$\alpha_{1}$$ and $$\alpha_{2}$$ , the constraints are reduced to:
+e reduced to:
+
+
+$$
+0 \leq \alpha_1, \alpha_2 \leq C
+$$
+
+$$
+y_1\alpha_1+y2\alpha_2 = k
+$$
+and this reduced problem can be solved analytically: one needs to find a minimum of a one-dimensional quadratic function. $$k$$ is the negative of the sum over the rest of terms in the equality constraint in the dual problem, which is a constant.
+
+Steps:
+1. Find a Lagrange multiplier $$\alpha_1$$ that violates the KKT conditions for the optimization problem.
+2. Pick a second multiplier $$\alpha_2$$ and optimize the pair $$(\alpha_1, \alpha_2)$$
+3. Repeats steips 1 and 2 until converge.
+
