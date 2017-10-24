@@ -24,4 +24,13 @@ we have inner product format in function (1), then we define the kernel as $$K(x
 ## Advantage and disadvantage of SVM
 
 ### Advantage
-* 
+* better performance for small size of data.
+* good generalization 
+* no local minimal(it's a convex optimization, local optimum  means global optimum??)
+* handle high-demenisonal data
+* have a solid theory to support. 
+
+### Disadvantage: 
+* Kernel selection and parameter tuning.
+* Originally for binary classification, not for multi-classification 
+* High algorithmic complexity and extensive memory requirement required by quadratic programming in large-scale tasks. 
