@@ -53,6 +53,10 @@ and this reduced problem can be solved analytically: one needs to find a minimum
 
 Steps:
 1. Find a Lagrange multiplier $$\alpha_1$$ that violates the KKT conditions for the optimization problem.
-2. Pick a second multiplier $$\alpha_2$$ and optimize the pair $$(\alpha_1, \alpha_2)$$
-3. Repeats steips 1 and 2 until converge.
+2. Pick a second multiplier $$\alpha_2$$ and optimize the pair $$(\alpha_1, \alpha_2)$$ (pick two that allow us to make the biggest progress towards the global maximum)
+3. optimize $$W(a)$$ with respect to $$\alpha_1$$ and $$\alpha_2$$, while holding all the other $$\alpha_k$$'s$$(k \neq 1,2)$$ fixed.
+4. Repeats steps 1 and 2 until converge.
 
+[1][http://cs229.stanford.edu/notes/cs229-notes3.pdf](http://cs229.stanford.edu/notes/cs229-notes3.pdf)
+
+[2][https://en.wikipedia.org/wiki/Support_vector_machine](https://en.wikipedia.org/wiki/Support_vector_machine)
