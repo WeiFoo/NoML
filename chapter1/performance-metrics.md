@@ -20,7 +20,7 @@ Most binary classifiers give a prediction probability for positive and negative 
 
 ## Why use AUC?
 ```
-he AUC value is equivalent to the probability that a randomly chosen positive example is ranked higher than a randomly chosen negative example.
+The AUC value is equivalent to the probability that a randomly chosen positive example is ranked higher than a randomly chosen negative example.
 
 作者：zhwhong
 链接：http://www.jianshu.com/p/c61ae11cc5f6
