@@ -3,12 +3,12 @@
 
 # What's Bias-variance trade-off?
 
-__Bias__:
+__Bias__: Difference between the expected(or average) prediction of our model and the correct value which we are trying  to predict. larger bias means underfitting and the model we got is simple.
 __Variance__:
 
 [1] [Understanding the Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html)
 
-[2][]()
+[2][Andrew Ng's CS229 notes on learning theory](http://cs229.stanford.edu/notes/cs229-notes4.pdf)
 
 
 
