@@ -23,10 +23,8 @@ If we have training data as $$(x_1,y_1)$$, $$(x_2, y_2)$$....$$(x_n,y_n)$$, all 
 
 The expected error can be denoted as:
 
+
 $$
-E[(y-\hat f)^2] = E[y^2 + \hat f^2 - 2y \hat f^2 ]
-                = 
-$$$$$$
 \begin{aligned}
 E[(y-\hat f)^2] & = E[y^2 + \hat f^2 - 2y \hat f^2 ] \\ 
                 & =  E[y^2] + E[\hat f^2] - 2fE[\hat f] \\
