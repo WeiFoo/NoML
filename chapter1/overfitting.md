@@ -19,7 +19,7 @@ __Bias_variance tradeoff__: The bias–variance tradeoff is a central problem in
 
 # Derivation of the bias-variance decomposition for squared error:
 
-If we have training data as $$(x_1,y_1)$$, $$(x_2, y_2)$$....$$(x_n,y_n)$$, all sailed from the same joint distribution $$P(x,y)$$. We assume that there's a function with noise $$ y = f(x)+ \epsilon $$, where the noise, $$\epsilon$$ has zero mean and variance $$\sigma^2$$. We want to find a function $$\hat f(x)$$ to estimate $$f(x)$$.
+If we have training data as $$(x_1,y_1)$$, $$(x_2, y_2)$$....$$(x_n,y_n)$$, all sampled from the same joint distribution $$P(x,y)$$. We assume that there's a function with noise $$ y = f(x)+ \epsilon $$, where the noise, $$\epsilon$$ has zero mean and variance $$\sigma^2$$. We want to find a function $$\hat f(x)$$ to estimate $$f(x)$$.
 
 The expected error can be denoted as:
 
