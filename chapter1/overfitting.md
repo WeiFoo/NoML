@@ -6,11 +6,16 @@
 __Bias__: Difference between the expected(or average) prediction of our model and the correct value which we are trying  to predict. larger bias means underfitting and the model we got is simple.
 __Variance__: Variability of a morel prediction for a given data point. larger variance means that our model is overfitting and it's a complex model.
  ![](/assets/Screen Shot 2017-10-27 at 9.49.43 PM.png)
+ 
+ 
+__Bias_variance tradeoff__: The bias–variance tradeoff is a central problem in supervised learning. Ideally, one wants to choose a model that both accurately captures the regularities in its training data, but also generalizes well to unseen data. Unfortunately, it is typically impossible to do both simultaneously. High-variance learning methods may be able to represent their training set well, but are at risk of overfitting to noisy or unrepresentative training data. In contrast, algorithms with high bias typically produce simpler models that don't tend to overfit, but may underfit their training data, failing to capture important regularities
+ 
 
 [1] [Understanding the Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html)
 
-[2] [Andrew Ng's CS229 notes on learning theory](http://cs229.stanford.edu/notes/cs229-notes4.pdf)
-
+[2] [Andrew Ng's CS229 notes on learning theory](http://cs229.stanford.edu/no tes/cs229-notes4.pdf)
+ [3] [](_tradeoff](https://en.wikipedia.org/wiki/Bias–variance_tra deofW
+[3] [Wikipedia Bias–variance_tradeoff](https://en.wikipedia.org/wiki/Bias–variance_tradeoff)
 
 
 ## **What's overfitting?**
