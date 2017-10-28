@@ -19,10 +19,25 @@ __Bias_variance tradeoff__: The bias–variance tradeoff is a central problem in
 
 # Derivation of the bias-variance decomposition for squared error:
 
-If we have training data as $$(x_1,y_1)$$, $$(x_2, y_2)$$....$$(x_n,y_n)$$, all sailed from the same joint distribution $$P(x,y)$$. We assume that there's a function with noise $$ y = f(x)+ \epsilon $$, where the noise, $$\epsilon$$ has zero mean and variance $$\sigma^2$$. We want to find a function $$f(x)$$ to estimate $$f(x)$$.
+If we have training data as $$(x_1,y_1)$$, $$(x_2, y_2)$$....$$(x_n,y_n)$$, all sailed from the same joint distribution $$P(x,y)$$. We assume that there's a function with noise $$ y = f(x)+ \epsilon $$, where the noise, $$\epsilon$$ has zero mean and variance $$\sigma^2$$. We want to find a function $$\hat f(x)$$ to estimate $$f(x)$$.
 
+The expected error can be denoted as:
 
+$$
+E[(y-\hat f)^2] = E[y^2 + \hat f^2 - 2y \hat f^2 ]
+                = 
+$$
+$$
+\begin{aligned}
+E[(y-\hat f)^2] & = E[y^2 + \hat f^2 - 2y \hat f^2 ] \\ 
+                & =  E[y^2] + E[\hat f^2] - 2fE[\hat f] \\
+                & = Var[y] + E[y]^2 + Var[\hat f] + E[\hat f]^2 - 2fE[\hat f] \\
+                & = Var[y] + Var[\hat f] + (f^2 - 2fE[\hat f] + E[\hat f]^2) \\
+                & = \sigma + var[\hat f] +(f-E[\hat f])^2 \\
+                & = \sigma + var[\hat f] + Bias[\hat f]^2
 
+\end{aligned}
+$$
 
 [1] [Wikipedia Bias–variance_tradeoff](https://en.wikipedia.org/wiki/Bias–variance_tradeoff)
 
