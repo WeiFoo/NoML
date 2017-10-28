@@ -1,4 +1,4 @@
-# Overfitting/Underfitting
+ # Overfitting/Underfitting
 
 
 # What's bias-variance trade-off?
@@ -14,7 +14,7 @@ __Bias_variance tradeoff__: The bias–variance tradeoff is a central problem in
 [1] [Understanding the Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html)
 
 [2] [Andrew Ng's CS229 notes on learning theory](http://cs229.stanford.edu/no tes/cs229-notes4.pdf)
- [3] [](_tradeoff](https://en.wikipedia.org/wiki/Bias–variance_tra deofW
+ 
 [3] [Wikipedia Bias–variance_tradeoff](https://en.wikipedia.org/wiki/Bias–variance_tradeoff)
 
 
