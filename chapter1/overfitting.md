@@ -26,8 +26,7 @@ The expected error can be denoted as:
 $$
 E[(y-\hat f)^2] = E[y^2 + \hat f^2 - 2y \hat f^2 ]
                 = 
-$$
-$$
+$$$$$$
 \begin{aligned}
 E[(y-\hat f)^2] & = E[y^2 + \hat f^2 - 2y \hat f^2 ] \\ 
                 & =  E[y^2] + E[\hat f^2] - 2fE[\hat f] \\
