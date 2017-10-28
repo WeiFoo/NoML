@@ -3,8 +3,8 @@
 
 # What's bias-variance trade-off?
 
-__Bias__: Difference between the expected(or average) prediction of our model and the correct value which we are trying  to predict. larger bias means underfitting and the model we got is simple.
-__Variance__: Variability of a morel prediction for a given data point. larger variance means that our model is overfitting and it's a complex model.
+__Bias__: Difference between the expected(or average) prediction of our model and the correct value which we are trying  to predict. Higher bias means underfitting and the model we got is simple.
+__Variance__: Error from sensitivity to small fluctuations in the training set. higher variance means that our model is overfitting and it's a complex model.
  ![](/assets/Screen Shot 2017-10-27 at 9.49.43 PM.png)
  
  
