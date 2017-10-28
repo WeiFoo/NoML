@@ -1,4 +1,4 @@
- # Overfitting/Underfitting
+ #  Bias and variance 
 
 
 # What's bias-variance trade-off?
