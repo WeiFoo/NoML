@@ -34,7 +34,7 @@ E[(y-\hat f)^2] & = E[y^2 + \hat f^2 - 2y \hat f^2 ] \\
                 & = \sigma^2 + var[\hat f] + Bias[\hat f]^2
 
 \end{aligned}
-$$,
+$$
 where $$\sigma^2$$ is called irreducible error. Since all these three terms are non-negative, this forms a lower bond ongthe expected derror on unseen samples.
 
 
