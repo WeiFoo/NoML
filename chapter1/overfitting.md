@@ -30,11 +30,13 @@ E[(y-\hat f)^2] & = E[y^2 + \hat f^2 - 2y \hat f^2 ] \\
                 & =  E[y^2] + E[\hat f^2] - 2fE[\hat f] \\
                 & = Var[y] + E[y]^2 + Var[\hat f] + E[\hat f]^2 - 2fE[\hat f] \\
                 & = Var[y] + Var[\hat f] + (f^2 - 2fE[\hat f] + E[\hat f]^2) \\
-                & = \sigma + var[\hat f] +(f-E[\hat f])^2 \\
-                & = \sigma + var[\hat f] + Bias[\hat f]^2
+                & = \sigma^2 + var[\hat f] +(f-E[\hat f])^2 \\
+                & = \sigma^2 + var[\hat f] + Bias[\hat f]^2
 
 \end{aligned}
-$$
+$$,
+where $$\sigma^2$$ is called irreducible error. Since all these three terms are non-negative, this forms a lower bond ongthe expected derror on unseen samples.
+
 
 [1] [Wikipedia Bias–variance_tradeoff](https://en.wikipedia.org/wiki/Bias–variance_tradeoff)
 
