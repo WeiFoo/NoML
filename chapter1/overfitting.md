@@ -1,10 +1,11 @@
 # Overfitting/Underfitting
 
 
-# What's Bias-variance trade-off?
+# What's bias-variance trade-off?
 
 __Bias__: Difference between the expected(or average) prediction of our model and the correct value which we are trying  to predict. larger bias means underfitting and the model we got is simple.
-__Variance__:
+__Variance__: Variability of a morel prediction for a given data point.
+ ![](/assets/Screen Shot 2017-10-27 at 9.49.43 PM.png)
 
 [1] [Understanding the Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html)
 
