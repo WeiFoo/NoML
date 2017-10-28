@@ -1,5 +1,17 @@
 # Overfitting/Underfitting
 
+
+# What's Bias-variance trade-off?
+
+__Bias__:
+__Variance__:
+
+[1] [Understanding the Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html)
+
+[2][]()
+
+
+
 ## **What's overfitting?**
 
 A: Overfitting refers to a model that models the training data too well. Overfitting happens when a model learns the detail and noise in the training data to the extent that it negatively impacts the performance of the model on new data.
