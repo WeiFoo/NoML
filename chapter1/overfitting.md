@@ -40,7 +40,14 @@ where $$\sigma^2$$ is called irreducible error. Since all these three terms are 
 
 [1] [Wikipedia Bias–variance_tradeoff](https://en.wikipedia.org/wiki/Bias–variance_tradeoff)
 
+## How to solve high bias and high variance situation?
 
+__High bias(underftiting)__: try some more complex methods(e.g, for deep learning, try bigger networks)
+__High variance(overfitting)__: 1. more data. 2. regularization 
+
+Pre deep learning era, we generally  don't have a tool to reduce bias without hurting variance, vice versa. However, for deep learning, we can drive down bias and just drive down bias, or drive down variance and just rive down variance, without really hearing the other thing that much. Like, train bigger network and at the same time add more data.
+
+[][Andrew Ng Cousera's video](https://www.coursera.org/learn/deep-neural-network/lecture/ZBkx4/basic-recipe-for-machine-learning)
 ## **What's overfitting?**
 
 A: Overfitting refers to a model that models the training data too well. Overfitting happens when a model learns the detail and noise in the training data to the extent that it negatively impacts the performance of the model on new data.
