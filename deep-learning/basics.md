@@ -9,7 +9,7 @@
 
 # Why normalizing inputs?
 
-Make your loss function or cost function easier to optimize, especially when using SGD to optimize. See the picture.
+Make all your features on the same scale, hopefully will make your loss function or cost function easier to optimize, especially when using SGD to optimize. See the picture.
 ![](/assets/Screen Shot 2017-10-28 at 10.14.07 PM.png)
 
 [1] [Andrew Ng's Coursera video ](https://www.coursera.org/learn/deep-neural-network/lecture/lXv6U/normalizing-inputs)
