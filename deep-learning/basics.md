@@ -91,5 +91,21 @@ Backpropagation with dropout is actually quite easy. You will have to carry out 
 2. During forward propagation, you had divided `A1` by `keep_prob`. In backpropagation, you'll therefore have to divide `dA1` by `keep_prob` again (the calculus interpretation is that if $$A^{[1]}$$ is scaled by `keep_prob`, then its derivative $$dA^{[1]}$$ is also scaled by the same `keep_prob`).
 
 
+# What's mini-batch gradient descent? Why use it?
+
+If you take all the training data set to do gradient descent, it will take long time, especially you have a huge datasets. Instead of using all, we can divide the data set evenly into $$K$$, each one with, say, 1000, data points.
+Then each time, we use 1000 data points as a mini-batch to move one step of gradient descent.
+
+* if mini-batch size = m, Batch gradient descent, $$(X^{\{1\}},Y^{\{1\}}) = (X, Y)$$
+ * Then batch gradient descent might start somewhere and be able to take relatively low noise, relatively large steps. And you could just keep matching to the minimum
+* if mini-batch size = 1, Stochastic gradient descent, every example is its own mini-batch.
+ * stochastic gradient descent If you start somewhere let's pick a different starting point. Then on every iteration you're taking gradient descent with just a single strain example so most of the time you hit two at the global minimum. But sometimes you hit in the wrong direction if that one example happens to point you in a bad direction. So stochastic gradient descent can be extremely noisy. And on average, it'll take you in a good direction, but sometimes it'll head in the wrong direction as well. As stochastic gradient descent won't ever converge, it'll always just kind of oscillate and wander around the region of the minimum. 
+ * But a huge disadvantage to stochastic gradient descent is that you lose almost all your speed up from vectorization. 
+* __In practice, batch size is between [1, m]__:
+  - get a lot vectorization, faster learning
+  - make progress without needing to wait to you process the entire training set.
+  
+
+
 
 
