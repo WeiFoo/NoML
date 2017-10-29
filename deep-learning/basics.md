@@ -105,7 +105,13 @@ Then each time, we use 1000 data points as a mini-batch to move one step of grad
   - get a lot vectorization, faster learning
   - make progress without needing to wait to you process the entire training set.
   
+![](/assets/Screen Shot 2017-10-29 at 1.29.40 AM.png)
 
+# How to choose mini-batch size?
+
+* If small data set: just use batch gradient descent
+* Typical mini-bath size: 64, 128, 256, 512, 1024
+* make sure mini-batch fit in CPU/GPU memory
 
 
 
