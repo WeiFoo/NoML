@@ -129,7 +129,7 @@ $$
 
 Generally, we use $$\beta = 0.9$$, which means we're averaging  over last 10 iteration gradients. 
 
-# What's the RMSprop?
+# What's RMSprop?
 RMSprop, which stands for root mean square prop, that can also speed up gradient descent.
 
 $$
@@ -140,6 +140,8 @@ $$
    b :&= b - \alpha * \frac{db}{\sqrt{S_{db}}}  
 \end{aligned}
 $$
+
+# What's Adam optimization?
 
 
 
