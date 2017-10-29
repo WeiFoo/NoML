@@ -129,6 +129,10 @@ $$
 
 Generally, we use $$\beta = 0.9$$, which means we're averaging  over last 10 iteration gradients. 
 
+**What you should remember**:
+- Momentum takes past gradients into account to smooth out the steps of gradient descent. It can be applied with batch gradient descent, mini-batch gradient descent or stochastic gradient descent.
+- You have to tune a momentum hyperparameter $$\beta$$ and a learning rate $$\alpha$$.
+
 # What's RMSprop?
 RMSprop, which stands for root mean square prop, that can also speed up gradient descent.
 
