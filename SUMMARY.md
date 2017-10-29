@@ -12,10 +12,10 @@
   * [Bias and variance ](chapter1/overfitting.md)
   * [Generative Model and Discriminative Models](chapter1/generative-model-and-discriminative-models.md)
 * [Deep Learning](deep-learning.md)
-  * RNN/LSTM
   * [Basics](deep-learning/basics.md)
-  * CNN
   * [NN Basic](deep-learning/nn-basic.md)
+  * RNN/LSTM
+  * CNN
   * [Word Embeeding](deep-learning/word-embeeding.md)
 * [Tree](tree.md)
   * [C4.5/CART](tree/c45cart.md)

@@ -38,5 +38,10 @@ This would cause output of neurons also take on a similar scale and this doesn't
 If the activation is __tanh__, we will use $$\sqrt\frac{1}{n^{[l-1]}}$$ as the variance.
 Others may use Xavier initialization as $$\sqrt \frac{1}{n^{[l-1]}+n^{[n]}}$$
 
+# What will happen if initialize all weights in the network to zero?
+
+In general, initializing all the weights to zero results in the network failing to break symmetry. This means that every neuron in each layer will learn the same thing, and you might as well be training a neural network with  n[l]=1
+  for every layer, and the network is no more powerful than a linear classifier such as logistic regression.
+
 
 
