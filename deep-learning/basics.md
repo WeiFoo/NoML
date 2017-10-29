@@ -14,3 +14,26 @@ Make all your features on the same scale, hopefully will make your loss function
 
 [1] [Andrew Ng's Coursera video ](https://www.coursera.org/learn/deep-neural-network/lecture/lXv6U/normalizing-inputs)
 
+
+# Vanishing and exploding gradients
+
+One of the problems of training neural network, especially very deep neural networksis data vanishing and exploding gradients. What that means is that when you're training a very deep network your derivatives or your slopes can sometimes get either very, very big or very, very small, maybe even exponentially small, and this makes training difficult.
+
+* if weights matrix $$\mathit W^{[i]} \gt \mathit{I}$$ (identity matrix), the output of activation function will be increased exponentially as a function of layers.
+* if weights matrix $$\mathit W^{[i]} \lt \mathit{I}$$ (identity matrix), the output of activation function will be decreased exponentially as a function of layers.
+
+# How to solve vanishing and exploding gradients problems?
+
+A partial solution would be a better weight initialization scheme.
+
+One reasonable thing to do would be to set the variance of $$W_i$$ to be equal to $$\frac{1}{n}$$, where $$n$$ is the number of input features that's going into a neuron. 
+For example, if the activation is RELU, then we can do this in practice. 
+
+$$
+W^{[l]} = np.random.randn(shape) * np.sqrt(\frac{2}{n^{[l-1]}})
+$$
+
+This would cause output of neurons also take on a similar scale and this doesn't solve, but it definitely helps reduce the vanishing, exploding gradients problem because it's trying to set each of the weight matrices $$W$$ you know so that it's not too much bigger than 1 and not too much less than 1 so it doesn't explode or vanish too quickly.
+
+
+
