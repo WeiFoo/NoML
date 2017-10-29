@@ -143,6 +143,33 @@ $$
 
 # What's Adam optimization?
 
+take momentum and RMSprop together.
+
+First, let $$V_{dW} = 0, S_{dW} = 0, V_{db} = 0, S_{db} = 0$$.Then, on iteration t:
+Compute $$d_W$$,$$d_b$$ using mini-batch.
+
+
+$$
+\begin{aligned}
+&V_{dW} = \beta_1 * V_{dW} + (1 - \beta_1) * dW \\
+&V_{db} = \beta_1 * V_{db} + {1 - \beta_1} * db \\
+&V_{dW}^{corrected} = \frac{V_{dW}}{1-\beta_1^t}  \rightarrow (bias\_correction)\\
+&V_{db}^{corrected} = \frac{V_{db}}{1-\beta_1^t}  \rightarrow (bias\_correction)\\
+&S_{dW} = \beta_2 * S_{dW} + (1 - \beta_2) * (dW)^2 \rightarrow (element\_wise\_squared) \\
+&S_{db} = \beta_2 * S_{db} + {1 - \beta_2} * (db)^2 \rightarrow (element\_wise\_squared)\\
+&S_{dW}^{corrected} = \frac{S_{dW}}{1-\beta_2^t} \rightarrow (bias\_correction) \\
+&S_{db}^{corrected} = \frac{S_{db}}{1-\beta_2^t} \rightarrow (bias\_correction) \\
+&W:= W - \lambda * \frac{V_{dW}^{corrected}}{\sqrt{S_{dW}^{corrected}}+\epsilon}\\
+&b:= b - \lambda * \frac{V_{db}^{corrected}}{\sqrt{S_{db}^{corrected}}+\epsilon}
+
+
+
+
+\end{aligned}
+
+
+$$
+
 
 
 
