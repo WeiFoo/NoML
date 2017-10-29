@@ -49,7 +49,6 @@ In general, initializing all the weights to zero results in the network failing 
 - It is however okay to initialize the biases $$b^{[l]}$$ to zeros. Symmetry is still broken so long as $$W^{[l]}$$ is initialized randomly.
 - Initializing weights to very large random values does not work well, it will generate very high cost at the beginning.
 This is because with large random-valued weights, the last activation (sigmoid) outputs results that are very close to 0 or 1 for some examples, and when it gets that example wrong it incurs a very high loss for that example. Indeed, when  log(a[3])=log(0) , the loss goes to infinity.
-Hopefully intializing with small random values does better. The important question is: how small should be these random values be? Lets find out in the next part! 
-
+Hopefully intializing with small random  values does better. The important question is: how small should be these random values be? Lets find out in the next part!
 
 
