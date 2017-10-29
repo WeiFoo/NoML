@@ -42,6 +42,11 @@ Others may use Xavier initialization as $$\sqrt \frac{1}{n^{[l-1]}+n^{[n]}}$$
 
 In general, initializing all the weights to zero results in the network failing to break symmetry. This means that every neuron in each layer will learn the same thing, and you might as well be training a neural network with  n[l]=1
   for every layer, and the network is no more powerful than a linear classifier such as logistic regression.
+  
+ 
+**What you should remember**:
+- The weights $$W^{[l]}$$ should be initialized randomly to break symmetry. 
+- It is however okay to initialize the biases $$b^{[l]}$$ to zeros. Symmetry is still broken so long as $$W^{[l]}$$ is initialized randomly.
 
 
 
