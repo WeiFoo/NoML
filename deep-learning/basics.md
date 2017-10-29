@@ -27,13 +27,16 @@ One of the problems of training neural network, especially very deep neural netw
 A partial solution would be a better weight initialization scheme.
 
 One reasonable thing to do would be to set the variance of $$W_i$$ to be equal to $$\frac{1}{n}$$, where $$n$$ is the number of input features that's going into a neuron. 
-For example, if the activation is RELU, then we can do this in practice. 
+For example, if the activation is __RELU__, then we can do this in practice. 
 
 $$
 W^{[l]} = np.random.randn(shape) * np.sqrt(\frac{2}{n^{[l-1]}})
 $$
 
 This would cause output of neurons also take on a similar scale and this doesn't solve, but it definitely helps reduce the vanishing, exploding gradients problem because it's trying to set each of the weight matrices $$W$$ you know so that it's not too much bigger than 1 and not too much less than 1 so it doesn't explode or vanish too quickly.
+
+If the activation is __tanh__, we will use $$\sqrt\frac{1}{n^{[l-1]}}$$ as the variance.
+Others may use Xavier initialization as $$\sqrt \frac{1}{n^{[l-1]}+n^{[n]}}$$
 
 
 
