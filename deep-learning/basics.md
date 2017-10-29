@@ -120,8 +120,8 @@ In one sentence, the basic idea is to compute an exponentially weighted average 
 
 $$
 \begin{aligned} 
-   V_{dW} &= \beta * V_{dW} + (1 - \beta) * dW \\
-   V_{db} &= \beta * V_{db} + {1 - \beta} * db \\
+   V_{dW} &= \beta_1 * V_{dW} + (1 - \beta_1) * dW \\
+   V_{db} &= \beta_1 * V_{db} + {1 - \beta_1} * db \\
    W :&= W - \alpha * V_{dW} \\
    b :&= b - \alpha * V_{db}  
 \end{aligned}
@@ -134,10 +134,10 @@ RMSprop, which stands for root mean square prop, that can also speed up gradient
 
 $$
 \begin{aligned} 
-   V_{dW} &= \beta * V_{dW} + (1 - \beta) * (dW)^2  \rightarrow (element\_wise\_squared) \\
-   V_{db} &= \beta * V_{db} + {1 - \beta} * (db)^2  \rightarrow (element\_wise\_squared)\\
-   W :&= W - \alpha * \frac{dW}{\sqrt{V_{dW}}} \\
-   b :&= b - \alpha * \frac{db}{\sqrt{V_{db}}}  
+   S_{dW} &= \beta_2 * S_{dW} + (1 - \beta_2) * (dW)^2  \rightarrow (element\_wise\_squared) \\
+   S_{db} &= \beta_2 * S_{db} + {1 - \beta_2} * (db)^2  \rightarrow (element\_wise\_squared)\\
+   W :&= W - \alpha * \frac{dW}{\sqrt{S_{dW}}} \\
+   b :&= b - \alpha * \frac{db}{\sqrt{S_{db}}}  
 \end{aligned}
 $$
 
