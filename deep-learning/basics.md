@@ -65,7 +65,7 @@ Hopefully intializing with small random  values does better. The important quest
 ?
 Dropout is a widely used regularization technique that is specific to deep learning. It randomly shuts down some neurons in each iteration.The idea behind drop-out is that at each iteration, you train a different model that uses only a subset of your neurons. With dropout, your neurons thus become less sensitive to the activation of one other specific neuron, because that other neuron might be shut down at any time.
 
-# How to do dropout in practice?
+# How to do dropout in practice(Inverted Dropout)?
 
 ### Forward Propagation 
 
