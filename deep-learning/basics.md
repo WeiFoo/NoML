@@ -162,13 +162,17 @@ $$
 &W:= W - \lambda * \frac{V_{dW}^{corrected}}{\sqrt{S_{dW}^{corrected}}+\epsilon}\\
 &b:= b - \lambda * \frac{V_{db}^{corrected}}{\sqrt{S_{db}^{corrected}}+\epsilon}
 
-
-
-
 \end{aligned}
-
-
 $$
+
+Hyper-parameters:
+
+* $$\alpha$$ nees to be tuned
+* $$\beta_1$$: 0.9   $$\rightarrow  (dW)$$ first moment 
+* $$\beta_2$$: 0.999  $$\rightarrow (dW^2) $$ second moment
+
+__Adam__: Adaptive moment estimation 
+
 
 
 
