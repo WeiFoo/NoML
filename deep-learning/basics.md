@@ -178,6 +178,17 @@ Hyper-parameters:
 __Adam__: Adaptive moment estimation 
 
 
+# What are the parameters more important in DLand have to be tuned?
+
+* __learning rate $$\alpha$$__
+* __momentum rate $$\beta$$__
+* Adam: $$\beta_1$$, $$\beta_2$$ and $$\epsilon$$ 
+* number of layers
+* number of hidden units
+* learning rate decay 
+* __mini-batch size__ 
+
+
 
 
 
