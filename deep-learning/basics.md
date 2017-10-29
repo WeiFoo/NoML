@@ -61,3 +61,29 @@ Hopefully intializing with small random  values does better. The important quest
 - Weights end up smaller ("weight decay"): 
     - Weights are pushed to smaller values.
 
+# What's dropout
+?
+Dropout is a widely used regularization technique that is specific to deep learning. It randomly shuts down some neurons in each iteration.The idea behind drop-out is that at each iteration, you train a different model that uses only a subset of your neurons. With dropout, your neurons thus become less sensitive to the activation of one other specific neuron, because that other neuron might be shut down at any time.
+
+# How to do dropout in practice?
+
+### Forward Propagation 
+
+**Instructions**:
+(This is an example from Andrew Ng's class)You would like to shut down some neurons in the first and second layers. To do that, you are going to carry out 4 Steps:
+1. In lecture, we dicussed creating a variable $$d^{[1]}$$ with the same shape as 
+$$a^{[1]}$$ using `np.random.rand()` to randomly get numbers between 0 and 1. Here, you will use a vectorized implementation, so create a random matrix $$D^{[1]} = [d^{[1](1)} d^{[1](2)} ... d^{[1](m)}] $$ of the same dimension as $$A^{[1]}$$.
+2. Set each entry of $$D^{[1]}$$ to be 0 with probability (`1-keep_prob`) or 1 with probability (`keep_prob`), by thresholding values in $$D^{[1]}$$ appropriately. Hint: to set all the entries of a matrix X to 0 (if entry is less than 0.5) or 1 (if entry is more than 0.5) you would do: `X = (X < 0.5)`. Note that 0 and 1 are respectively equivalent to False and True.
+3. Set $$A^{[1]}$$ to $$A^{[1]} * D^{[1]}$$. (You are shutting down some neurons). You can think of $$D^{[1]}$$ as a mask, so that when it is multiplied with another matrix, it shuts down some of the values.
+4. Divide $$A^{[1]}$$ by `keep_prob`. By doing this you are assuring that the result of the cost will still have the same expected value as without drop-out. (This technique is also called inverted dropout.)
+
+### Backward Propagation 
+
+**Instruction**:
+Backpropagation with dropout is actually quite easy. You will have to carry out 2 Steps:
+1. You had previously shut down some neurons during forward propagation, by applying a mask $$D^{[1]}$$ to `A1`. In backpropagation, you will have to shut down the same neurons, by reapplying the same mask $$D^{[1]}$$ to `dA1`. 
+2. During forward propagation, you had divided `A1` by `keep_prob`. In backpropagation, you'll therefore have to divide `dA1` by `keep_prob` again (the calculus interpretation is that if $$A^{[1]}$$ is scaled by `keep_prob`, then its derivative $$dA^{[1]}$$ is also scaled by the same `keep_prob`).
+
+
+
+
