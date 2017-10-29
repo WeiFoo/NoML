@@ -13,7 +13,6 @@
   * [Generative Model and Discriminative Models](chapter1/generative-model-and-discriminative-models.md)
 * [Deep Learning](deep-learning.md)
   * [Basics](deep-learning/basics.md)
-  * [NN Basic](deep-learning/nn-basic.md)
   * [RNN/LSTM](deep-learning/rnnlstm.md)
   * [CNN](deep-learning/cnn.md)
   * [Word Embeeding](deep-learning/word-embeeding.md)

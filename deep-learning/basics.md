@@ -114,4 +114,20 @@ Then each time, we use 1000 data points as a mini-batch to move one step of grad
 * make sure mini-batch fit in CPU/GPU memory
 
 
+# What's gradient descent with momentum?
+
+In one sentence, the basic idea is to compute an exponentially weighted average of your gradients, and then use that gradient to update your weights instead.
+
+$$
+\begin{aligned} 
+   V_{dW} &= \beta * V_{dW} + (1 - \beta) * dW \\
+   V_{db} &= \beta * V_{db} + {1 - \beta} * db \\
+   W :&= W - \alpha * V_{dW} \\
+   b :&= b - \alpha * V_{db}  
+\end{aligned}
+$$
+
+Generally, we use $$\beta = 0.9$$, which means we're averaging  over last 10 iteration gradients. 
+
+
 
