@@ -14,8 +14,8 @@
 * [Deep Learning](deep-learning.md)
   * [Basics](deep-learning/basics.md)
   * [NN Basic](deep-learning/nn-basic.md)
-  * RNN/LSTM
-  * CNN
+  * [RNN/LSTM](deep-learning/rnnlstm.md)
+  * [CNN](deep-learning/cnn.md)
   * [Word Embeeding](deep-learning/word-embeeding.md)
 * [Tree](tree.md)
   * [C4.5/CART](tree/c45cart.md)

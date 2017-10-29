@@ -51,4 +51,13 @@ In general, initializing all the weights to zero results in the network failing 
 This is because with large random-valued weights, the last activation (sigmoid) outputs results that are very close to 0 or 1 for some examples, and when it gets that example wrong it incurs a very high loss for that example. Indeed, when  log(a[3])=log(0) , the loss goes to infinity.
 Hopefully intializing with small random  values does better. The important question is: how small should be these random values be? Lets find out in the next part!
 
+# L2 regularization on deep learning?
+
+**What you should remember** -- the implications of L2-regularization on:
+- The cost computation:
+    - A regularization term is added to the cost
+- The backpropagation function:
+    - There are extra terms in the gradients with respect to weight matrices
+- Weights end up smaller ("weight decay"): 
+    - Weights are pushed to smaller values.
 
