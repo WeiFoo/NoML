@@ -182,11 +182,11 @@ __Adam__: Adaptive moment estimation
 
 * __learning rate $$\alpha$$__
 * __momentum rate $$\beta$$__
-* Adam: $$\beta_1$$, $$\beta_2$$ and $$\epsilon$$ 
+* Adam: $$\beta_1= 0.9$$, $$\beta_2=0.999$$ and $$\epsilon$$ 
 * number of layers
 * number of hidden units
 * learning rate decay 
-* __mini-batch size__ 
+* __mini-batch size $$m$$__ 
 
 
 
