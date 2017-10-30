@@ -210,7 +210,11 @@ Adding  batch norm to a network
 ![](/assets/Screen Shot 2017-10-30 at 11.21.20 AM.png)
 
 
+# Why batch normalization works?
 
+Why batch norm works, is it makes weights, later or deeper than your network, say the weight on layer 10, more robust to changes to weights in earlier layers of the neural network, say, in layer one. 
+
+__Convraince shift__: if you've learned some X to Y mapping, if the distribution of X changes, then you might need to retrain your learning algorithm
 
  
 
