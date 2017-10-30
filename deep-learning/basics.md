@@ -219,7 +219,29 @@ __Convraince shift__: if you've learned some X to Y mapping, if the distribution
 
 # How to do batch norm at test time?
 
-Batch norm processes your data one mini batch at a time, but the test time you might need to process the examples one at a time. Then, how to do that? __Estimate__ $$\mu$$ and $$\sigma^2$$ __using exponentially weighted average across all mini-batch__.
+Batch norm processes your data one mini batch at a time, but the test time you might need to process the examples one at a time. Then, how to do that? __Estimate__ $$\mu$$ and $$\sigma^2$$ __using exponentially weighted average across all mini-batchs__.
+For example, for the layer $$l$$, you have mini-batch $$X^{\{1\}}$$, $$X^{\{2\}}$$, $$X^{\{3\}}$$, ...., after training each mini-batch, you have the following values $$\mu^{\{1\}[l]}$$, $$\mu^{\{2\}[l]}$$, $$\mu^{\{3\}[l]}$$, .... and $$\sigma^{\{1\}[l]}$$, $$\sigma^{\{2\}[l]}$$, $$\sigma^{\{3\}[l]}$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
