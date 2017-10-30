@@ -190,7 +190,26 @@ __Adam__: Adaptive moment estimation
 
 
 
+# What's batch normalization?
 
+Normalize hidden unit values $$Z^{[l]}$$(before activation function) or $$a^{[l]}$$ (after activation function) so as
+to train $$W$$ and $$b$$ faster. Mostly, do $$Z[l]$$. For some specific layer $$l$$, calculate 
+
+$$
+\begin{aligned}
+ &\mu^{[l]} = \frac{1}{m} \sum_i Z^{[l](i)} \\
+ &\sigma^{2[l]} = \frac{1}{m} \sum_i(Z^{[l](i)} - \mu^{[l]})^2 \\
+ &Z_{norm}^{[l](i)}  = \frac{Z^{[l](i)}-\mu}{\sqrt{\sigma^{2[l]} + \epsilon}} \\
+ &\tilde{Z}^{[l](i)}  = \gamma Z_{norm}^{[l][i]} + \beta
+\end{aligned}
+$$
+
+Then use $$\tilde{Z}^{[l](i)}$$ instead of $$Z^{[l](i)}$$ for your hidden unit values.
+
+
+
+
+ 
 
 
 
