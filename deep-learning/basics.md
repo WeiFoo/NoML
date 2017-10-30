@@ -206,6 +206,9 @@ $$
 
 Then use $$\tilde{Z}^{[l](i)}$$ instead of $$Z^{[l](i)}$$ for your hidden unit values.
 
+Adding  batch norm to a network 
+![](/assets/Screen Shot 2017-10-30 at 11.21.20 AM.png)
+
 
 
 
