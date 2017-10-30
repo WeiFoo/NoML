@@ -217,6 +217,17 @@ Why batch norm works, is it makes weights, later or deeper than your network, sa
 
 __Convraince shift__: if you've learned some X to Y mapping, if the distribution of X changes, then you might need to retrain your learning algorithm
 
+# How to do batch norm at test time?
+
+Batch norm processes your data one mini batch at a time, but the test time you might need to process the examples one at a time. Then, how to do that? __Estimate__ $$\mu$$ and $$\sigma^2$$ __using exponentially weighted average across all mini-batch__.
+
+
+
+
+
+
+
+
  
 
 
