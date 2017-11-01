@@ -15,3 +15,13 @@ Size of test set: set your test set to be going enough to give high confidence i
 
 If doing well on your metric + dev/test set don't correspond to doing well on your application, change your metric and/or dev/test set.
 
+# Summary of bias/variance with human-level perforamnce
+
+
+* Huan-level error: as a proxy for Bayes error
+
+* Training error:
+ * training error - human -level error = "Avoidable bias"
+
+* Dev error :
+ * Dev error - Training error = "variance "
