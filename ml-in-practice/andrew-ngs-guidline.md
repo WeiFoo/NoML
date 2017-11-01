@@ -22,9 +22,15 @@ If doing well on your metric + dev/test set don't correspond to doing well on yo
 
 * Training error:
  * training error - human -level error = "Avoidable bias"
+  * Training bigger modeel
+  * Train longer/better optimization algorithms 
+  * NN architecture/hyperparameters search
 
 * Dev error :
  * Dev error - Training error = "variance "
+ * More data
+ * Regularization: L2, dropout, data augmentation, 
+ * NN architecture/hyperparameters search.
  
  
 # Two fundamental assumptions of supervised learning
