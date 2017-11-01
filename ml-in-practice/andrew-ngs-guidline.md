@@ -25,3 +25,13 @@ If doing well on your metric + dev/test set don't correspond to doing well on yo
 
 * Dev error :
  * Dev error - Training error = "variance "
+ 
+ 
+# Two fundamental assumptions of supervised learning
+
+* You can fit the training set pretty well.
+
+* The training set performance generalizes pretty well to the dev/test set.
+
+
+
