@@ -27,4 +27,5 @@
 * [ML in practice](ml-in-practice.md)
   * [Pandas](ml-in-practice/pandas.md)
   * [Scikit-Learn](ml-in-practice/scikit-learn.md)
+  * [Andrew Ng's guidline](ml-in-practice/andrew-ngs-guidline.md)
 
