@@ -58,4 +58,11 @@ If doing well on your metric + dev/test set don't correspond to doing well on yo
 | Eroor on the examples not trained on | "training-dev error" 10%  |<<<< Data Mismatch >>>>   | "Dev/test error" 6%  |   |
 
 
+# When transfer learning makes sense in DL?
+
+* task A and task B have the same input X
+* you have a lot of data for task A than task B
+* low level features from A could be helpful for task B
+
+
 
