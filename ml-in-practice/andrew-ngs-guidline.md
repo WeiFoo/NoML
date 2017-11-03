@@ -41,6 +41,12 @@ If doing well on your metric + dev/test set don't correspond to doing well on yo
 
 # Error analysis
 
+# Build your system quickly
+
+ * Set up dev/test set and metric
+ * Build inital system quicily
+ * use Bias/Variance analytiss & Error analytiss ot prioritize next steps. 
+
 
 
 
