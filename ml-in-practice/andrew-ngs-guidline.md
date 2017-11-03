@@ -38,17 +38,18 @@ If doing well on your metric + dev/test set don't correspond to doing well on yo
 
 * The training set performance generalizes pretty well to the dev/test set.
 
-
 # Error analysis
 
 # Build your system quickly
 
- * Set up dev/test set and metric
- * Build inital system quicily
- * use Bias/Variance analytiss & Error analytiss ot prioritize next steps. 
+* Set up dev/test set and metric
 
+* Build inital system quicily 
 
+* Use Bias/Variance analytiss & Error analytiss ot prioritize next steps. 
 
+# Bias/Variance on mismatched training and dev/test sets
+![](/assets/Screen Shot 2017-11-03 at 00.20.49.png)
 
 
 
