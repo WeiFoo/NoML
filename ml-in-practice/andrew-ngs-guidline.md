@@ -51,6 +51,11 @@ If doing well on your metric + dev/test set don't correspond to doing well on yo
 # Bias/Variance on mismatched training and dev/test sets
 ![](/assets/Screen Shot 2017-11-03 at 00.20.49.png)
 
+|   | General Speech Recognition  | |Rearer Mirror Speech Data  |   |   
+|---|---|---|---|---|
+|  Human Level error |  "human level" 4% |   |   | <<< Avoidable error   |
+| Error on the examples trained on |  "training error" 7% |   |   | <<< Variance  |
+| Eroor on the examples not trained on | "training-dev error" 10%  |<<<< Data Mismatch >>>>   | "Dev/test error" 6%  |   |
 
 
 
