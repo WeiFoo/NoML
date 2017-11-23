@@ -8,8 +8,8 @@
 note: when $$p=\frac{f-1}{2}$$, then the output size = input size
 
 # Strided convolution
-input: $$n$$
-filter: $$f$$
-padding: $$p$$
-stride: $$s$$
-output: $$\lfloor\frac{n+2p-f}{s} +1\rfloor$$
+input: $$n * n$$
+filter: $$f * f$$
+padding: $$p * p$$
+stride: $$s * s$$
+output: $$\lfloor\frac{n+2p-f}{s} +1\rfloor * \lfloor\frac{n+2p-f}{s} +1\rfloor$$
