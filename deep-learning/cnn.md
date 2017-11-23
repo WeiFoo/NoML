@@ -4,4 +4,4 @@
 
 # Input size(n), conv filter size(f), and output size(o) 
 * without padding, $$o = n-f+1$$
-* with padding, $$o = n+2p-f+1$$, where p is the size of padding.
+* with padding, $$o = n+2p-f+1$$, where $$p$$ is the size of padding.
