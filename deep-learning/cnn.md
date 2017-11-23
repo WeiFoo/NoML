@@ -5,3 +5,11 @@
 # Input size(n), conv filter size(f), and output size(o) 
 * without padding, $$o = n-f+1$$
 * with padding, $$o = n+2p-f+1$$, where $$p$$ is the size of padding.
+note: when $$p=\frac{f-1}{2}$$, then the output size = input size
+
+# Strided convolution
+input: $$n$$
+filter: $$f$$
+padding: $$p$$
+stride: $$s$$
+output: $$\lfloor\frac{n+2p-f}{s} +1\rfloor$$
