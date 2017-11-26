@@ -19,5 +19,7 @@ output size: $$\lfloor\frac{n+2p-f}{s} +1\rfloor * \lfloor\frac{n+2p-f}{s} +1\rf
 Divide the input into regions as the same size as maxpooling filter.
 So what the max operation does is so long as the feature is detected anywhere in one of these quadrants, it then remains preserved in the output of Max pooling. So what the max operator does is really it says, if the feature is detected anywhere in this filter, then keep a high number. But if this feature is not detected, so maybe the feature doesn't exist in the upper right hand quadrant, then the max of all those numbers is still itself quite small.
 
-Parameters: filter size **f** and stride **s**. The output size of pooling will be the same as strided convolution output.
+Parameters: filter size **f** and stride **s**. The output size of pooling will be the same as strided convolution output. Typically, f = 2, s = 2; f = 3, s = 2; Mostly, maxpooling doesn't use padding.
+
+No parameters to learn in backprob.
 
