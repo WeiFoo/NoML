@@ -16,6 +16,7 @@
   * [RNN/LSTM](deep-learning/rnnlstm.md)
   * [CNN](deep-learning/cnn.md)
     * [Classic networks](deep-learning/cnn/classic-networks.md)
+    * [Data agumentation](deep-learning/cnn/data-agumentation.md)
   * [Word Embeeding](deep-learning/word-embeeding.md)
 * [Tree](tree.md)
   * [C4.5/CART](tree/c45cart.md)
