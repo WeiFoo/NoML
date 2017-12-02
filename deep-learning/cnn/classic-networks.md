@@ -15,5 +15,7 @@ Totally, 60 M parameters.
 
 # VGG - 16
 
+![](/assets/Screen Shot 2017-12-02 at 15.24.38.png)
+
 
 
