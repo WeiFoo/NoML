@@ -21,5 +21,8 @@ max-pooling: 2x2, stride = 2,
 16 layers: 13 convs, 2 fc, 1 output
 Totally, 138M parameters.
 
+# ReNets
+
+![](/assets/Screen Shot 2017-12-02 at 15.38.15.png)
 
 
