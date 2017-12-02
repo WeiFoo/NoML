@@ -21,9 +21,13 @@ max-pooling: 2x2, stride = 2,
 16 layers: 13 convs, 2 fc, 1 output
 Totally, 138M parameters.
 
-# ReNets
-
+# ResNets
+Skip connections, can help much deeper networks.
 ![](/assets/Screen Shot 2017-12-02 at 15.38.15.png)
 
 ![](/assets/Screen Shot 2017-12-02 at 15.39.05.png)
 
+# Inception Neworks
+Using 1x1 convolution to reduce computational cost
+  
+![](/assets/Screen Shot 2017-12-02 at 16.03.59.png)
