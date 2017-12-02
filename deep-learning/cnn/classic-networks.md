@@ -25,4 +25,5 @@ Totally, 138M parameters.
 
 ![](/assets/Screen Shot 2017-12-02 at 15.38.15.png)
 
+![](/assets/Screen Shot 2017-12-02 at 15.39.05.png)
 
