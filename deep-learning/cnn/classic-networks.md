@@ -27,7 +27,14 @@ Skip connections, can help much deeper networks.
 
 ![](/assets/Screen Shot 2017-12-02 at 15.39.05.png)
 
-# Inception Neworks
+# Inception Neworks(GoogleNet)
+
+![](/assets/Screen Shot 2017-12-02 at 16.13.04.png)
+
 Using 1x1 convolution to reduce computational cost
   
 ![](/assets/Screen Shot 2017-12-02 at 16.03.59.png)
+
+![](/assets/Screen Shot 2017-12-02 at 16.15.11.png)
+
+![](/assets/Screen Shot 2017-12-02 at 16.15.52.png)
