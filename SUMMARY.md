@@ -23,9 +23,8 @@
   * [Tree](tree.md)
     * [C4.5/CART](classification/tree/c45cart.md)
     * [RandomForests](classification/tree/randomforests.md)
-  * [LR/SVM](lrsvm.md)
-  * [Logistic Regression](classificaiton/logistic-regression.md)
-  * [SVM](classificaiton/svm.md)
+  * [Logistic Regression](classification/logistic-regression.md)
+  * [SVM](classification/svm.md)
 * [Regression](regression.md)
   * [test](regression/test.md)
 * Clustering
