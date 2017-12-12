@@ -31,10 +31,9 @@ Basically, there're two formats: question-answer and note. You can either ask a 
 ```markdown
 Q: What's overfitting?
 
-A: Overfitting refers to a model that models the training data too well.
-   Overfitting happens when a model learns the detail and noise in 
-   the training data to the extent that it negatively impacts the 
-   performance of the model on new data.
+A: Overfitting refers to a model that models the training data too well. Overfitting happens
+   when a model learns the detail and noise in the training data to the extent that it negatively
+   impacts the performance of the model on new data.
 
 R: https://machinelearningmastery.com/overfitting-and-underfitting-with-machine-learning-algorithms/
 ```
