@@ -1,6 +1,21 @@
 # NoML--No Machine Learning
 
-This is a  notebook for me to prepare machine learning interview. The basic idea is to collect the basic ML knowledge \(or questions\) that might have been asked or will be asked for an ML engineer interview. You might think that we can read a ML book, why do we need to create this notebook? Because sometimes, when we read a book, we get lost and  don't know what kind of question will be asked.
+No matter how you end up reading this post, if you will interview machine learning engineer or data scientist job,
+you must be well prepared for that. Do you know machine learning? How well?  Consider the following questions:
+
+```
+*  What's bias and variance?
+*  What's L1 and L2 regularization? which is more stable?
+*  What's relationship between logistic regression and SVM?
+*  What's SVM? please derive it mathematically.
+*  How to update logistic regression parameters? which algorithms? 
+*  Do you know deep learning? please write a basic fully-connected neural network with numpy using any activation function?
+
+```
+If you could answer those questions pretty well(Chinese "pretty well", not), I think you're ready for the interview. 
+Machine learning interview questions can be asked as simple as explaining confusion matrix, drawing ROC, or as hard as implementing K-means, basic neural networks or even some mathematical explanation of SVM.
+
+You might think that we can read a ML book, why do we need to create this notebook? Because sometimes, when we read a book, we get lost and  don't know what kind of question will be asked.
 
 So the beauty of this book is to **collect questions or asked questions!**
 
@@ -25,7 +40,7 @@ E: You can give some explanations here.
 R: https://machinelearningmastery.com/overfitting-and-underfitting-with-machine-learning-algorithms/
 ```
 
-## GitBook
+## Read at GitBook
 
 This project is hosted at gitbook, you can read it here!==&gt;[https://weifoo.gitbooks.io/noml/content](https://weifoo.gitbooks.io/noml/content/)
 
