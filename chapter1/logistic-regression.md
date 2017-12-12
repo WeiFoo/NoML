@@ -1,4 +1,4 @@
-  # Logistic Regreesion
+  # Logistic Reggreesion
 
 **Logistic function or Sigmoid function**:  
 $$g(x) = \frac{1}{1+e^{-x}}$$,  which will take any $$x \in R$$, and output a value between 0 and 1.
