@@ -8,7 +8,7 @@
 * Advantage: simply to understand & interpret, mirrors human decision making
 * Disadvantage:
   * can __overfit easily__ (and generalize poorly)if we don't limit the depth of the tree
-  * can be __non-robust__: A small change in the training data can lead to a totally different tree
+  * can be __non-robust__: a small change in the training data can lead to a totally different tree
   * __instability__: sensitive to training set rotation due to its orthogonal decision boundaries
   
   [https://github.com/ShuaiW/ml-interview#Decision tree](https://github.com/ShuaiW/ml-interview#SVM)
