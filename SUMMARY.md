@@ -12,11 +12,9 @@
   * [Generative Model and Discriminative Models](chapter1/generative-model-and-discriminative-models.md)
 * [Deep Learning](deep-learning.md)
   * [Basics](deep-learning/basics.md)
-  * [RNN/LSTM](deep-learning/rnnlstm.md)
   * [CNN](deep-learning/cnn.md)
     * [Classic networks](deep-learning/cnn/classic-networks.md)
     * [Data agumentation](deep-learning/cnn/data-agumentation.md)
-  * [Word Embeeding](deep-learning/word-embeeding.md)
 * [Tree](tree.md)
   * [C4.5/CART](tree/c45cart.md)
   * [RandomForests](tree/randomforests.md)
@@ -27,6 +25,5 @@
   * [Gradient Boosting Decision Tree](ensemble/gradient-boosting-decision-tree.md)
 * [ML in practice](ml-in-practice.md)
   * [Pandas](ml-in-practice/pandas.md)
-  * [Scikit-Learn](ml-in-practice/scikit-learn.md)
   * [Andrew Ng's guideline](ml-in-practice/andrew-ngs-guidline.md)
 
