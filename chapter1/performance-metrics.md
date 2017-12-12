@@ -17,17 +17,13 @@ Most binary classifiers give a prediction probability for positive and negative 
 The AUC value is equivalent to the probability that a randomly chosen positive example 
 i s ranked higher than a randomly chosen negative example.
 When data sets are imbalanced, ROC/AUC is more stable than Recall, F1, precision..
-作者：zhwhong
-链接：http://www.jianshu.com/p/c61ae11cc5f6
-來源：简书
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。  
-```
+
 
 ## Confusion matrix
 
 
-Recall = TP/(TP+FN)
-Precision = TP/(TP+FP)
-F1 = 2 Recall* Precision /(Recall + Precision)
-PF = FP/(FP+TN )
-Acc = (TP+TN)/(TP+TN+FP+FN)
+$$ Recall = TP/(TP+FN)$$
+$$Precision = TP/(TP+FP)$$
+$$F1 = 2 Recall* Precision /(Recall + Precision)$$
+$$PF = FP/(FP+TN )$$
+$$Acc = (TP+TN)/(TP+TN+FP+FN)$$
