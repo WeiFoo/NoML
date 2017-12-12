@@ -13,7 +13,7 @@ you must be well prepared for that. Do you know machine learning? How well?  Con
 
 ```
 If you could answer those questions pretty well(Chinese "pretty well", not), I think you're ready for the interview. 
-Machine learning interview questions can be asked as simple as explaining confusion matrix, drawing ROC, or as hard as implementing K-means, basic neural networks or even some mathematical explanation of SVM.
+Machine learning interview questions can be asked as simple as explaining confusion matrix, drawing ROC, or as hard as implementing K-means, basic neural networks or even some mathematical explanation of SVM. These are really basic, not even considering practical issue. 
 
 You might think that we can read a ML book, why do we need to create this notebook? Because sometimes, when we read a book, we get lost and  don't know what kind of question will be asked.
 
