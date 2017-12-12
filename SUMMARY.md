@@ -5,7 +5,6 @@
   * [L1/L2  ](chapter1/l1l2-norm.md)
   * [Logistic Regression](chapter1/logistic-regression.md)
   * [SVM](chapter1/svm.md)
-  * [Hyperparameter Tuning](chapter1/hyperparameter-tuning.md)
   * [MLE/MAP/Bayesian Method](chapter1/mlemapbayesian-method.md)
   * [Optimization](chapter1/optimization.md)
   * [Performance Metrics](chapter1/performance-metrics.md)
