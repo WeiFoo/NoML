@@ -26,7 +26,7 @@ Please fork this repo and submit pull requests. In this repo, we use Markdown an
 
 
 
-Basically, there're two formats: question-answer and note. You can either ask a question and answer it, like the following example
+Basically, there're two formats: __QA__ and __Notes__. You can either ask a question and answer it, like the following example
 
 ```markdown
 Q: What's overfitting?
