@@ -51,9 +51,6 @@ variance(bagging),bias(boosting) or improve the predictive force(stacking alias 
 
 Then if necessary, you can give an explanation. Please note, **you can asked any questions(write any notes) you want.  But the answer you provided should always come with a link\(give credits to the original author\).  **At least, let the readers judge how good the answer is and whether it makes sense!
 
-For example,
-
-
 
 ## Read at GitBook
 
