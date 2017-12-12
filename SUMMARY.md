@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [ML101](chapter1.md)
   * [Performance Metrics](ML101/performance-metrics.md)
-  * [Bias and variance ](ML101/overfitting.md)
+  * [Bias and variance ](ML101/bias-variance.md)
   * [L1/L2  ](ML101/l1l2-norm.md)
   * [MLE/MAP/Bayesian Method](ML101/mlemapbayesian-method.md)
   * [Generative Model and Discriminative Models](ML101/generative-model-and-discriminative-models.md)
