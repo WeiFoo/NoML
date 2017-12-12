@@ -45,7 +45,8 @@ OR write a note about specific algorithm, like:
 
 Bagging, boosting, stacking all are so-called ''meta-algorithms'': 
 Approach to combine serval machine learning techniques into one predictive model 
-in order to decrease the variance(bagging),bias(boosting) or improve the predictive force(stacking alias ensemble).
+in order to decrease the variance(bagging),bias(boosting) or improve the
+predictive force(stacking alias ensemble).
 
 ```
 
