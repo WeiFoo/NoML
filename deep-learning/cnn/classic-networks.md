@@ -3,8 +3,8 @@
 conv(f=5x5,s=1)-pooling(f=2,s=2)-conv(f=5x5,s=1)-pooling(f=2,s=2)-fc(120)-fc(84).
 ![](/assets/Screen Shot 2017-12-02 at 15.13.22.png)
 
-5 layers: 2 convs, 2 fc, 1 output
-Totally, 60K parameters.
+5 layers: 2 convolutional layers, 2 fully connected layers, 1 output layer
+Totally, 60K parameters need to learn.
 
 
 # Alex - Net
