@@ -2,10 +2,10 @@
 
 * [Introduction](README.md)
 * [ML101](chapter1.md)
-  * [L1/L2  ](ML101/l1l2-norm.md)
-  * [MLE/MAP/Bayesian Method](ML101/mlemapbayesian-method.md)
   * [Performance Metrics](ML101/performance-metrics.md)
   * [Bias and variance ](ML101/overfitting.md)
+  * [L1/L2  ](ML101/l1l2-norm.md)
+  * [MLE/MAP/Bayesian Method](ML101/mlemapbayesian-method.md)
   * [Generative Model and Discriminative Models](ML101/generative-model-and-discriminative-models.md)
 * [LR/SVM](lrsvm.md)
   * [SVM](lr-svm/svm.md)
