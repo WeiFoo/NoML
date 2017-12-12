@@ -30,5 +30,8 @@
   * [SVM](classification/svm.md)
 * [Regression](regression.md)
   * [test](regression/test.md)
-* Clustering
+* [Clustering](clustering.md)
+  * test
+* [Code](code.md)
+  * [code](code/code.md)
 
