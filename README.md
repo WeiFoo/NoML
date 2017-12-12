@@ -9,7 +9,8 @@ you must be well prepared for that. Do you know machine learning? How well?  Con
 *  What's relationship between logistic regression and SVM?
 *  What's SVM? please derive it mathematically.
 *  How to update logistic regression parameters? which algorithms? 
-*  Do you know deep learning? please write a basic fully-connected neural network with numpy using any activation function?
+*  Do you know deep learning? please write a basic fully-connected neural 
+   network with numpy using any activation function?
 
 ```
 If you could answer those questions pretty well(Chinese "pretty well", not....), I think you're ready for the interview. 
