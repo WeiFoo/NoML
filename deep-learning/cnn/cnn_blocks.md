@@ -14,11 +14,28 @@ By convention, size of filter is usually odd, one reason is that we can have a e
 it's nice to have a pixel, you can call the central pixel so you can talk about the position of the filter.
 
 # Strided convolution
+
+Instead of moving around one step each time, 
+
 input size: $$n * n$$
 filter size: $$f * f$$
 padding size: $$p * p$$
 stride size: $$s * s$$
 output size: $$\lfloor\frac{n+2p-f}{s} +1\rfloor * \lfloor\frac{n+2p-f}{s} +1\rfloor$$
+![](/assets/stridedconvolution.png)
+
+
+# Convolutions over volume
+
+If the image is $$n*n*c$$ (c is number of color channels), e.g., 6x6x3, then you convol with a $$3*3*3$$ filter(for example, it will detect vertical lines) to get a $$4*4$$ 2D output. If you want to detect horizontal lines, then you have another filter $$3*3*3$$, then your output will be $$4*4*2$$. Here, we stack the output together. 
+
+![](/assets/multiplefilters.png)
+
+# One Layer of Convolutional Network
+
+
+s![](/assets/onecnnstructure.png)
+![](/assets/onelayercnn.png)
 
 # What's MaxPooling?
 
@@ -29,3 +46,12 @@ Parameters: filter size **f** and stride **s**. The output size of pooling will 
 
 No parameters to learn in backprob.
 
+Maxpooling is done independently on each $$n_c$$ channel of input.
+
+Usually, doesn't use any padding.
+![](/assets/maxpooling.png)
+
+# Why using convolutional neural networks?
+
+* Advantage of CNN: Parameter sharing and sparsity of connections!
+![](/assets/ps.png)
