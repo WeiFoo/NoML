@@ -7,7 +7,7 @@
   * [L1/L2  ](ml101/l1l2-norm.md)
   * [MLE/MAP/Bayesian Method](ml101/mlemapbayesian-method.md)
   * [Generative Model and Discriminative Models](ml101/generative-model-and-discriminative-models.md)
-* [Preprocessing][preprocess/README.md]
+* \[Preprocessing\]\[preprocess/README.md\]
   * [Numeric Features](preprocess/numeric.md)
   * [Categorical and Ordinal Features](preprocess/category.md)
   * [Datetime and Coordinates](date_loc.md)
@@ -19,6 +19,7 @@
 * [Deep Learning](deep-learning.md)
   * [Basics](deep-learning/basics.md)
   * [CNN](deep-learning/cnn.md)
+    * [CNN\_blocks](deep-learning/cnn/cnn_blocks.md)
     * [Classic networks](deep-learning/cnn/classic-networks.md)
     * [Data agumentation](deep-learning/cnn/data-agumentation.md)
 * [Frameworks](ml-in-practice.md)
