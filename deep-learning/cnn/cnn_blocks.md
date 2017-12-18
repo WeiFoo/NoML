@@ -3,10 +3,15 @@
 * Without padding, the pixels near the edge will have fewer contribution than pixels in the middle of the picture. That said, without padding, we might throw information from edge.
 
 # Two Padding Schemes 
-Here, we have Input size(n), conv filter size(f), and output size(o) 
+Here, we have Input size(n), conv filter size(f), and output size(o):
+
 * Valid(in tensorflow: ```"VALID"```): without padding, the output size after padding is $$o = n-f+1$$
+
 * Same (in tensorflow: ```"SAME"```): with padding, the output size after padding is $$o = n+2p-f+1$$, where $$p$$ is the size of padding.
 note: when $$p=\frac{f-1}{2}$$, then the output size = input size
+
+By convention, size of filter is usually odd, one reason is that we can have a even padding p; another reason is that in computer vision literature, 
+it's nice to have a pixel, you can call the central pixel so you can talk about the position of the filter.
 
 # Strided convolution
 input size: $$n * n$$
