@@ -55,3 +55,9 @@ Usually, doesn't use any padding.
 
 * Advantage of CNN: Parameter sharing and sparsity of connections!
 ![](/assets/ps.png)
+
+# How to speed up convolution computation
+
+#### Convert the convolution computation into matrix multiplication 
+
+![](/assets/conv_matrix.png)
