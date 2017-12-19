@@ -19,6 +19,7 @@
 * [Deep Learning](deep-learning.md)
   * [Basics](deep-learning/basics.md)
   * [CNN](deep-learning/cnn.md)
+    * [CNN\_blocks](deep-learning/cnn/cnn_blocks.md)
     * [Classic networks](deep-learning/cnn/classic-networks.md)
     * [Data agumentation](deep-learning/cnn/data-agumentation.md)
 * [Frameworks](ml-in-practice.md)
