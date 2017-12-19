@@ -51,6 +51,21 @@ def pool_forward_test():
   print (" mode = average")
   print ("A = ", A)
 
+def conv_backward_test():
+  np.random.seed(1)
+  A_prev = np.random.randn(10, 4, 4, 3)
+  W = np.random.randn(2, 2, 3, 8)
+  b = np.random.randn(1, 1, 1, 8)
+  hyper_param = {"pad": 2,
+                 "stride": 2}
+  Z, cache_conv = conv_forward(A_prev, W, b, hyper_param)
+  dA, dW, db = conv_backward(Z, cache_conv)
+
+  print("dA_mean = ", np.mean(dA))
+  print("dW_mean = ", np.mean(dW))
+  print("db_mean = ", np.mean(db))
+
+
 
 if __name__ == "__main__":
   # zero_pad_test()
@@ -58,4 +73,5 @@ if __name__ == "__main__":
   # conv_forward_test()
   # conv_forward_test()
   # conv_forward_vect_test()
-  pool_forward_test()
+  # pool_forward_test()
+  conv_backward_test()

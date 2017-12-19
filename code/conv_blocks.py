@@ -149,3 +149,59 @@ def pool_forward(A_prev, hyper_param, mode="max"):
 
   cache = (A_prev, hyper_param)
   return A, cache
+
+
+def conv_backward(dZ, cache):
+  """
+   Implement the backward propagation of a convolution funciton.
+  :param dZ: gradient of the cost with respect to the output of the conv(Z)
+  :param cache: cache of the needed value,
+  :return:
+    dW: gradient of the cost with respect to the weights of the conv layer(W)
+    db: gradient of the cost with respect to the biases of the conv layer(b)
+    dA_prev: gradient of the cost with respect to the input of the conv layer(A_prev)
+  """
+  (A_prev, W, b, hyper_param) = cache
+
+  (m, n_prev_H, n_prev_W, n_prev_C) = A_prev.shape
+
+  (f, f, n_prev_C, n_C) = W.shape
+
+  stride = hyper_param["stride"]
+  pad = hyper_param["pad"]
+
+  (m, n_H, n_W, n_C) = dZ.shape
+
+  dA_prev = np.zeros((m, n_prev_H, n_prev_W, n_prev_C))
+  dW = np.zeros((f, f, n_prev_C,n_C))
+  db = np.zeros((1,1,1,n_C))
+
+  A_prev_pad = zero_pad(A_prev, pad=pad)
+  dA_prev_pad = zero_pad(dA_prev, pad=pad)
+
+  for i in range(m):
+    a_prev_pad = A_prev_pad[i]
+    da_prev_pad = dA_prev_pad[i]
+    for h in range(n_H):
+      for w in range(n_W):
+        for c in range(n_C):
+          y0 = h * stride
+          y1 = y0 + f
+          x0 = w * stride
+          x1 = x0 + f
+
+          a_slice = a_prev_pad[y0:y1, x0:x1, :]
+          # calculate gradients
+          da_prev_pad[y0:y1, x0:x1, :] += W[:,:,:,c] * dZ[i,h,w,c]
+          dW[:,:,:,c] += a_slice * dZ[i,h,w,c]
+          db[:,:,:,c] += dZ[i,h,w,c]
+
+    # set the ith training example's dA_prev to the unupaded da_prev_pad
+    dA_prev[i,:,:,:] = da_prev_pad[pad:-pad, pad:-pad,:]
+
+  return dA_prev, dW, db
+
+
+
+
+
