@@ -26,4 +26,4 @@ $$ Recall = TP/(TP+FN)$$
 $$Precision = TP/(TP+FP)$$
 $$F1 = 2 Recall* Precision /(Recall + Precision)$$
 $$PF = FP/(FP+TN )$$
-$$Acc = (TP+TN)/(TP+TN+FP+FN)$$
+$$Acc = (TP+TN)/(TP+TN+FP+FN)$$\
